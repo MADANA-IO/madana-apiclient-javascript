@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.JsonEnvironmentPublishingRequest
+# MadanaApiclient.JsonEnvironmentPublishingRequest
 
 ## Properties
 

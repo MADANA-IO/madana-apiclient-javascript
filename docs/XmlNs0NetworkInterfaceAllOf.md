@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.XmlNs0NetworkInterfaceAllOf
+# MadanaApiclient.XmlNs0NetworkInterfaceAllOf
 
 ## Properties
 

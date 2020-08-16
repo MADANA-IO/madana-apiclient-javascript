@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.JsonMDNCertificate
+# MadanaApiclient.JsonMDNCertificate
 
 ## Properties
 

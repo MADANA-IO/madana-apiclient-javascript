@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.JsonIPFSSystemInfo
+# MadanaApiclient.JsonIPFSSystemInfo
 
 ## Properties
 

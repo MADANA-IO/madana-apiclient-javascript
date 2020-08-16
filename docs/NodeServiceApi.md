@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.NodeServiceApi
+# MadanaApiclient.NodeServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -19,9 +19,9 @@ Method | HTTP request | Description
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.NodeServiceApi();
+let apiInstance = new MadanaApiclient.NodeServiceApi();
 apiInstance.getBootstrap((error, data, response) => {
   if (error) {
     console.error(error);
@@ -58,9 +58,9 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.NodeServiceApi();
+let apiInstance = new MadanaApiclient.NodeServiceApi();
 let opts = {
   'owner': "owner_example" // String | 
 };
@@ -103,11 +103,11 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.NodeServiceApi();
+let apiInstance = new MadanaApiclient.NodeServiceApi();
 let opts = {
-  'body': new MadanaSampleclientJavascript.JsonNodeInfo() // JsonNodeInfo | 
+  'body': new MadanaApiclient.JsonNodeInfo() // JsonNodeInfo | 
 };
 apiInstance.postNodeInfo(opts, (error, data, response) => {
   if (error) {

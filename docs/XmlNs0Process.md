@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.XmlNs0Process
+# MadanaApiclient.XmlNs0Process
 
 ## Properties
 

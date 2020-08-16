@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.JsonEnvironment
+# MadanaApiclient.JsonEnvironment
 
 ## Properties
 

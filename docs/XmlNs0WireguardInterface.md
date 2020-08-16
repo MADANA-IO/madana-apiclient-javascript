@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.XmlNs0WireguardInterface
+# MadanaApiclient.XmlNs0WireguardInterface
 
 ## Properties
 

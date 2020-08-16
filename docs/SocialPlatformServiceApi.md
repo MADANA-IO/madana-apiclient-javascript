@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.SocialPlatformServiceApi
+# MadanaApiclient.SocialPlatformServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -21,9 +21,9 @@ Used to Handle Incoming Webhooks from Facebook
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.SocialPlatformServiceApi();
+let apiInstance = new MadanaApiclient.SocialPlatformServiceApi();
 let opts = {
   'body': "body_example" // String | 
 };
@@ -68,9 +68,9 @@ Used to Handle Incoming Webhooks from Facebook
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.SocialPlatformServiceApi();
+let apiInstance = new MadanaApiclient.SocialPlatformServiceApi();
 let opts = {
   'body': "body_example" // String | 
 };
@@ -115,9 +115,9 @@ Used to Handle Incoming Webhooks from Twitter
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.SocialPlatformServiceApi();
+let apiInstance = new MadanaApiclient.SocialPlatformServiceApi();
 let opts = {
   'crcToken': "crcToken_example" // String | 
 };

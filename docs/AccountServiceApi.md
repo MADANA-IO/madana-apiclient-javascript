@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.AccountServiceApi
+# MadanaApiclient.AccountServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -20,9 +20,9 @@ Method | HTTP request | Description
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.AccountServiceApi();
+let apiInstance = new MadanaApiclient.AccountServiceApi();
 let token = "token_example"; // String | 
 apiInstance.activateUser(token, (error, data, response) => {
   if (error) {
@@ -65,11 +65,11 @@ Sends an Password reset mail to the given MailAddress
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.AccountServiceApi();
+let apiInstance = new MadanaApiclient.AccountServiceApi();
 let opts = {
-  'body': new MadanaSampleclientJavascript.JsonMDNMailAddress() // JsonMDNMailAddress | - the MaiAddress under which the user has signed up
+  'body': new MadanaApiclient.JsonMDNMailAddress() // JsonMDNMailAddress | - the MaiAddress under which the user has signed up
 };
 apiInstance.createObject(opts, (error, data, response) => {
   if (error) {
@@ -112,9 +112,9 @@ Used to request a new  activation-mail for the user
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.AccountServiceApi();
+let apiInstance = new MadanaApiclient.AccountServiceApi();
 apiInstance.requestVerificationMail((error, data, response) => {
   if (error) {
     console.error(error);
@@ -153,11 +153,11 @@ Receives the Password reset and tries to set the provided password for the user.
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.AccountServiceApi();
+let apiInstance = new MadanaApiclient.AccountServiceApi();
 let opts = {
-  'body': new MadanaSampleclientJavascript.JsonMDNPasswordReset() // JsonMDNPasswordReset | - the MDN_PasswordReset Object
+  'body': new MadanaApiclient.JsonMDNPasswordReset() // JsonMDNPasswordReset | - the MDN_PasswordReset Object
 };
 apiInstance.updateObject(opts, (error, data, response) => {
   if (error) {

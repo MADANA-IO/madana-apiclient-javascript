@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.JsonNetworkInterface
+# MadanaApiclient.JsonNetworkInterface
 
 ## Properties
 

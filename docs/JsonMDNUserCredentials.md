@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.JsonMDNUserCredentials
+# MadanaApiclient.JsonMDNUserCredentials
 
 ## Properties
 

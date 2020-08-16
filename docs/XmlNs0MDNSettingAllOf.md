@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.XmlNs0MDNSettingAllOf
+# MadanaApiclient.XmlNs0MDNSettingAllOf
 
 ## Properties
 

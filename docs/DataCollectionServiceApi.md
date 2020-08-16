@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.DataCollectionServiceApi
+# MadanaApiclient.DataCollectionServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -19,9 +19,9 @@ Method | HTTP request | Description
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.DataCollectionServiceApi();
+let apiInstance = new MadanaApiclient.DataCollectionServiceApi();
 let name = "name_example"; // String | 
 apiInstance.getMethodsForType(name, (error, data, response) => {
   if (error) {
@@ -62,9 +62,9 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.DataCollectionServiceApi();
+let apiInstance = new MadanaApiclient.DataCollectionServiceApi();
 apiInstance.getNodes((error, data, response) => {
   if (error) {
     console.error(error);
@@ -101,9 +101,9 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.DataCollectionServiceApi();
+let apiInstance = new MadanaApiclient.DataCollectionServiceApi();
 apiInstance.getTypes((error, data, response) => {
   if (error) {
     console.error(error);

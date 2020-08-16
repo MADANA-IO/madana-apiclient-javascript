@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.JsonMDNOAuthToken
+# MadanaApiclient.JsonMDNOAuthToken
 
 ## Properties
 

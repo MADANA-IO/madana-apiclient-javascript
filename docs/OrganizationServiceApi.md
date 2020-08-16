@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.OrganizationServiceApi
+# MadanaApiclient.OrganizationServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -17,9 +17,9 @@ Method | HTTP request | Description
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.OrganizationServiceApi();
+let apiInstance = new MadanaApiclient.OrganizationServiceApi();
 apiInstance.getNodes3((error, data, response) => {
   if (error) {
     console.error(error);

@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.RequestServiceApi
+# MadanaApiclient.RequestServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -32,13 +32,13 @@ Is used to upload and park the data till the AnalysisRequest gets processed
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.RequestServiceApi();
+let apiInstance = new MadanaApiclient.RequestServiceApi();
 let uuid = "uuid_example"; // String | 
 let opts = {
   'authorization': "authorization_example", // String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
-  'body': new MadanaSampleclientJavascript.JsonSignedData() // JsonSignedData | 
+  'body': new MadanaApiclient.JsonSignedData() // JsonSignedData | 
 };
 apiInstance.addData(uuid, opts, (error, data, response) => {
   if (error) {
@@ -83,13 +83,13 @@ Endpoint is called from the Analysis Processing entity to submit the result
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.RequestServiceApi();
+let apiInstance = new MadanaApiclient.RequestServiceApi();
 let uuid = "uuid_example"; // String | 
 let opts = {
   'authorization': "authorization_example", // String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
-  'body': new MadanaSampleclientJavascript.JsonSignedData() // JsonSignedData | 
+  'body': new MadanaApiclient.JsonSignedData() // JsonSignedData | 
 };
 apiInstance.cancelProcessing(uuid, opts, (error, data, response) => {
   if (error) {
@@ -134,12 +134,12 @@ Endpoint used to create a new Analysis Request
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.RequestServiceApi();
+let apiInstance = new MadanaApiclient.RequestServiceApi();
 let opts = {
   'authorization': "authorization_example", // String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
-  'body': new MadanaSampleclientJavascript.JsonSignedData() // JsonSignedData | 
+  'body': new MadanaApiclient.JsonSignedData() // JsonSignedData | 
 };
 apiInstance.createNewRequest(opts, (error, data, response) => {
   if (error) {
@@ -181,9 +181,9 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.RequestServiceApi();
+let apiInstance = new MadanaApiclient.RequestServiceApi();
 let opts = {
   'limit': "'30'", // String | 
   'offset': "'0'" // String | 
@@ -230,9 +230,9 @@ Is called from the APE to request all parked datasets. Returns the transmitted d
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.RequestServiceApi();
+let apiInstance = new MadanaApiclient.RequestServiceApi();
 let uuid = "uuid_example"; // String | 
 let opts = {
   'authorization': "authorization_example" // String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
@@ -279,9 +279,9 @@ Returns UUIDs of existing analyses.
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.RequestServiceApi();
+let apiInstance = new MadanaApiclient.RequestServiceApi();
 let opts = {
   'authorization': "authorization_example", // String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
   'created': "'false'", // String | - if Queryparam \"created=true\" only the UUIDs of own Requests are shown
@@ -340,9 +340,9 @@ Is called from the APE to request all parked datasets. Returns the transmitted d
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.RequestServiceApi();
+let apiInstance = new MadanaApiclient.RequestServiceApi();
 let uuid = "uuid_example"; // String | 
 let opts = {
   'authorization': "authorization_example" // String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
@@ -389,9 +389,9 @@ Returns the details for certain Request. When requesting an analysis a view of t
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.RequestServiceApi();
+let apiInstance = new MadanaApiclient.RequestServiceApi();
 let uuid = "uuid_example"; // String | 
 let opts = {
   'authorization': "authorization_example" // String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
@@ -438,9 +438,9 @@ Can be called from creator to request the AnalysisResult.
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.RequestServiceApi();
+let apiInstance = new MadanaApiclient.RequestServiceApi();
 let uuid = "uuid_example"; // String | 
 let opts = {
   'authorization': "authorization_example" // String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
@@ -485,9 +485,9 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.RequestServiceApi();
+let apiInstance = new MadanaApiclient.RequestServiceApi();
 apiInstance.getStatus((error, data, response) => {
   if (error) {
     console.error(error);
@@ -526,9 +526,9 @@ Used to give consent for request. If the Endpoint is called from the creator of 
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.RequestServiceApi();
+let apiInstance = new MadanaApiclient.RequestServiceApi();
 let uuid = "uuid_example"; // String | 
 let opts = {
   'authorization': "authorization_example" // String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
@@ -575,9 +575,9 @@ Endpoint used initialized addition datacollection parameters for requester
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.RequestServiceApi();
+let apiInstance = new MadanaApiclient.RequestServiceApi();
 let uuid = "uuid_example"; // String | 
 let opts = {
   'authorization': "authorization_example", // String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
@@ -626,9 +626,9 @@ Is called from the APE to request all parked datasets. Returns the transmitted d
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.RequestServiceApi();
+let apiInstance = new MadanaApiclient.RequestServiceApi();
 let uuid = "uuid_example"; // String | 
 let opts = {
   'authorization': "authorization_example" // String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
@@ -675,13 +675,13 @@ Endpoint is called from the Analysis Processing entity to submit the result
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.RequestServiceApi();
+let apiInstance = new MadanaApiclient.RequestServiceApi();
 let uuid = "uuid_example"; // String | 
 let opts = {
   'authorization': "authorization_example", // String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
-  'body': new MadanaSampleclientJavascript.JsonSignedData() // JsonSignedData | 
+  'body': new MadanaApiclient.JsonSignedData() // JsonSignedData | 
 };
 apiInstance.setResult(uuid, opts, (error, data, response) => {
   if (error) {

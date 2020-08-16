@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.JsonWireguardInterface
+# MadanaApiclient.JsonWireguardInterface
 
 ## Properties
 

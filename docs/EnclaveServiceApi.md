@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.EnclaveServiceApi
+# MadanaApiclient.EnclaveServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -24,12 +24,12 @@ Method | HTTP request | Description
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.EnclaveServiceApi();
+let apiInstance = new MadanaApiclient.EnclaveServiceApi();
 let uuid = "uuid_example"; // String | 
 let opts = {
-  'body': new MadanaSampleclientJavascript.JsonEnclaveRunningAttestationApproval() // JsonEnclaveRunningAttestationApproval | 
+  'body': new MadanaApiclient.JsonEnclaveRunningAttestationApproval() // JsonEnclaveRunningAttestationApproval | 
 };
 apiInstance.approveEnclave(uuid, opts, (error, data, response) => {
   if (error) {
@@ -71,12 +71,12 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.EnclaveServiceApi();
+let apiInstance = new MadanaApiclient.EnclaveServiceApi();
 let uuid = "uuid_example"; // String | 
 let opts = {
-  'body': new MadanaSampleclientJavascript.JsonNodeInfo() // JsonNodeInfo | 
+  'body': new MadanaApiclient.JsonNodeInfo() // JsonNodeInfo | 
 };
 apiInstance.assignEnclaveAgent(uuid, opts, (error, data, response) => {
   if (error) {
@@ -118,12 +118,12 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.EnclaveServiceApi();
+let apiInstance = new MadanaApiclient.EnclaveServiceApi();
 let uuid = "uuid_example"; // String | 
 let opts = {
-  'body': new MadanaSampleclientJavascript.JsonEnclaveRunningAttestation() // JsonEnclaveRunningAttestation | 
+  'body': new MadanaApiclient.JsonEnclaveRunningAttestation() // JsonEnclaveRunningAttestation | 
 };
 apiInstance.attestateEnclave(uuid, opts, (error, data, response) => {
   if (error) {
@@ -165,11 +165,11 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.EnclaveServiceApi();
+let apiInstance = new MadanaApiclient.EnclaveServiceApi();
 let opts = {
-  'body': new MadanaSampleclientJavascript.JsonEnclaveRunRequest() // JsonEnclaveRunRequest | 
+  'body': new MadanaApiclient.JsonEnclaveRunRequest() // JsonEnclaveRunRequest | 
 };
 apiInstance.createEnclaveRunRequest(opts, (error, data, response) => {
   if (error) {
@@ -210,9 +210,9 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.EnclaveServiceApi();
+let apiInstance = new MadanaApiclient.EnclaveServiceApi();
 let uuid = "uuid_example"; // String | 
 apiInstance.getEnclave(uuid, (error, data, response) => {
   if (error) {
@@ -253,9 +253,9 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.EnclaveServiceApi();
+let apiInstance = new MadanaApiclient.EnclaveServiceApi();
 apiInstance.getEnclaveTypes((error, data, response) => {
   if (error) {
     console.error(error);
@@ -294,9 +294,9 @@ Returns UUIDs of existing analyses.
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.EnclaveServiceApi();
+let apiInstance = new MadanaApiclient.EnclaveServiceApi();
 let opts = {
   'authorization': "authorization_example", // String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
   'created': "'true'", // String | - if Queryparam \"created=true\" only the UUIDs of own Requests are shown
@@ -347,9 +347,9 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.EnclaveServiceApi();
+let apiInstance = new MadanaApiclient.EnclaveServiceApi();
 let uuid = "uuid_example"; // String | 
 apiInstance.killEnclave(uuid, (error, data, response) => {
   if (error) {

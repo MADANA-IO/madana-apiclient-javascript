@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.UserServiceApi
+# MadanaApiclient.UserServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -27,12 +27,12 @@ Creates a new user object
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.UserServiceApi();
+let apiInstance = new MadanaApiclient.UserServiceApi();
 let opts = {
   'referrer': "referrer_example", // String | 
-  'body': new MadanaSampleclientJavascript.JsonMDNUser() // JsonMDNUser | provided user object inheriting properties and credentials
+  'body': new MadanaApiclient.JsonMDNUser() // JsonMDNUser | provided user object inheriting properties and credentials
 };
 apiInstance.createObject2(opts, (error, data, response) => {
   if (error) {
@@ -76,9 +76,9 @@ Deletes an User based on the provided id and securitycontext
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.UserServiceApi();
+let apiInstance = new MadanaApiclient.UserServiceApi();
 let username = "username_example"; // String | 
 apiInstance.deleteObject(username, (error, data, response) => {
   if (error) {
@@ -121,9 +121,9 @@ Deletes linked account from the user and securitycontext
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.UserServiceApi();
+let apiInstance = new MadanaApiclient.UserServiceApi();
 let ident = "ident_example"; // String | 
 let platform = "platform_example"; // String | 
 let username = "username_example"; // String | 
@@ -168,9 +168,9 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.UserServiceApi();
+let apiInstance = new MadanaApiclient.UserServiceApi();
 let username = "username_example"; // String | 
 apiInstance.getAvatars(username, (error, data, response) => {
   if (error) {
@@ -211,9 +211,9 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.UserServiceApi();
+let apiInstance = new MadanaApiclient.UserServiceApi();
 let username = "username_example"; // String | 
 apiInstance.getCertificates(username, (error, data, response) => {
   if (error) {
@@ -254,9 +254,9 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.UserServiceApi();
+let apiInstance = new MadanaApiclient.UserServiceApi();
 let username = "username_example"; // String | 
 apiInstance.getObject2(username, (error, data, response) => {
   if (error) {
@@ -297,12 +297,12 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.UserServiceApi();
+let apiInstance = new MadanaApiclient.UserServiceApi();
 let username = "username_example"; // String | 
 let opts = {
-  'body': new MadanaSampleclientJavascript.JsonMDNUserProfileImage() // JsonMDNUserProfileImage | 
+  'body': new MadanaApiclient.JsonMDNUserProfileImage() // JsonMDNUserProfileImage | 
 };
 apiInstance.setAvatar(username, opts, (error, data, response) => {
   if (error) {
@@ -344,12 +344,12 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.UserServiceApi();
+let apiInstance = new MadanaApiclient.UserServiceApi();
 let username = "username_example"; // String | 
 let opts = {
-  'body': new MadanaSampleclientJavascript.JsonMDNUserSetting() // JsonMDNUserSetting | 
+  'body': new MadanaApiclient.JsonMDNUserSetting() // JsonMDNUserSetting | 
 };
 apiInstance.setSettings(username, opts, (error, data, response) => {
   if (error) {
@@ -393,12 +393,12 @@ Updates Userproperties based on the provided user object
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.UserServiceApi();
+let apiInstance = new MadanaApiclient.UserServiceApi();
 let username = "username_example"; // String | 
 let opts = {
-  'body': new MadanaSampleclientJavascript.JsonMDNUser() // JsonMDNUser | the new user object inherting all properties that should be change
+  'body': new MadanaApiclient.JsonMDNUser() // JsonMDNUser | the new user object inherting all properties that should be change
 };
 apiInstance.updateObject2(username, opts, (error, data, response) => {
   if (error) {

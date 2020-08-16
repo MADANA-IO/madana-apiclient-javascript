@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.JsonMDNSetting
+# MadanaApiclient.JsonMDNSetting
 
 ## Properties
 

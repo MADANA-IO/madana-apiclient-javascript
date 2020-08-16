@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.JsonMDNUserProfileImage
+# MadanaApiclient.JsonMDNUserProfileImage
 
 ## Properties
 

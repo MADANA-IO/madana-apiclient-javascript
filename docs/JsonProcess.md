@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.JsonProcess
+# MadanaApiclient.JsonProcess
 
 ## Properties
 

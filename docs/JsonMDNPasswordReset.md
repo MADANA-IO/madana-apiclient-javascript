@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.JsonMDNPasswordReset
+# MadanaApiclient.JsonMDNPasswordReset
 
 ## Properties
 

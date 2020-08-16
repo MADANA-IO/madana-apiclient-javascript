@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.JsonDiskConfig
+# MadanaApiclient.JsonDiskConfig
 
 ## Properties
 

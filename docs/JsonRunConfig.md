@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.JsonRunConfig
+# MadanaApiclient.JsonRunConfig
 
 ## Properties
 

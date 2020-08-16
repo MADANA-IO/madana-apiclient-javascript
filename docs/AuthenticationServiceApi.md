@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.AuthenticationServiceApi
+# MadanaApiclient.AuthenticationServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -29,11 +29,11 @@ Authenticates a new application and returns the token
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.AuthenticationServiceApi();
+let apiInstance = new MadanaApiclient.AuthenticationServiceApi();
 let opts = {
-  'body': new MadanaSampleclientJavascript.JsonMDNCertificate() // JsonMDNCertificate | the credentials used to validate the user
+  'body': new MadanaApiclient.JsonMDNCertificate() // JsonMDNCertificate | the credentials used to validate the user
 };
 apiInstance.authenticateApplication(opts, (error, data, response) => {
   if (error) {
@@ -74,12 +74,12 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.AuthenticationServiceApi();
+let apiInstance = new MadanaApiclient.AuthenticationServiceApi();
 let wallet = "wallet_example"; // String | the wallet which should be authenticated
 let opts = {
-  'body': new MadanaSampleclientJavascript.JsonMDNOAuthToken() // JsonMDNOAuthToken | Token containing nonce and signate
+  'body': new MadanaApiclient.JsonMDNOAuthToken() // JsonMDNOAuthToken | Token containing nonce and signate
 };
 apiInstance.authenticateEthereumWallet(wallet, opts, (error, data, response) => {
   if (error) {
@@ -123,11 +123,11 @@ Authenticates a new user and returns the token (  forbidden if the credentials c
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.AuthenticationServiceApi();
+let apiInstance = new MadanaApiclient.AuthenticationServiceApi();
 let opts = {
-  'body': new MadanaSampleclientJavascript.JsonMDNUserCredentials() // JsonMDNUserCredentials | the credentials used to validate the user
+  'body': new MadanaApiclient.JsonMDNUserCredentials() // JsonMDNUserCredentials | the credentials used to validate the user
 };
 apiInstance.authenticateUser(opts, (error, data, response) => {
   if (error) {
@@ -168,12 +168,12 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.AuthenticationServiceApi();
+let apiInstance = new MadanaApiclient.AuthenticationServiceApi();
 let wallet = "wallet_example"; // String | the wallet which should be authenticated
 let opts = {
-  'body': new MadanaSampleclientJavascript.JsonMDNOAuthToken() // JsonMDNOAuthToken | Token containing nonce and signate
+  'body': new MadanaApiclient.JsonMDNOAuthToken() // JsonMDNOAuthToken | Token containing nonce and signate
 };
 apiInstance.authenticateWithEthereumChallenge(wallet, opts, (error, data, response) => {
   if (error) {
@@ -217,9 +217,9 @@ Returns the AUthorization URL to verify a Twitter Accounts
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.AuthenticationServiceApi();
+let apiInstance = new MadanaApiclient.AuthenticationServiceApi();
 apiInstance.getFractalAuthenticationURL((error, data, response) => {
   if (error) {
     console.error(error);
@@ -258,9 +258,9 @@ Returns a nonce for the client which is used as content for the to be created si
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.AuthenticationServiceApi();
+let apiInstance = new MadanaApiclient.AuthenticationServiceApi();
 let wallet = "wallet_example"; // String | - wallet address as String * @HTTP 417 If the address is not valid
 let opts = {
   'authorization': "authorization_example" // String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
@@ -307,9 +307,9 @@ Used to validate the active connection with the API
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.AuthenticationServiceApi();
+let apiInstance = new MadanaApiclient.AuthenticationServiceApi();
 apiInstance.getObject((error, data, response) => {
   if (error) {
     console.error(error);
@@ -348,9 +348,9 @@ Returns the AUthorization URL to verify a Twitter Accounts
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.AuthenticationServiceApi();
+let apiInstance = new MadanaApiclient.AuthenticationServiceApi();
 apiInstance.getTwitterAuthenticationURL((error, data, response) => {
   if (error) {
     console.error(error);
@@ -389,9 +389,9 @@ Used as Callback URL when users have successfully authorized their facbeook acco
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.AuthenticationServiceApi();
+let apiInstance = new MadanaApiclient.AuthenticationServiceApi();
 let opts = {
   'body': "body_example" // String | 
 };
@@ -434,9 +434,9 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.AuthenticationServiceApi();
+let apiInstance = new MadanaApiclient.AuthenticationServiceApi();
 let opts = {
   'body': "body_example" // String | 
 };
@@ -479,11 +479,11 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.AuthenticationServiceApi();
+let apiInstance = new MadanaApiclient.AuthenticationServiceApi();
 let opts = {
-  'body': new MadanaSampleclientJavascript.JsonMDNOAuthToken() // JsonMDNOAuthToken | 
+  'body': new MadanaApiclient.JsonMDNOAuthToken() // JsonMDNOAuthToken | 
 };
 apiInstance.setTwitterUID(opts, (error, data, response) => {
   if (error) {

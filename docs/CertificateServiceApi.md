@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.CertificateServiceApi
+# MadanaApiclient.CertificateServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -21,11 +21,11 @@ Issues certificates for logged-in users
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.CertificateServiceApi();
+let apiInstance = new MadanaApiclient.CertificateServiceApi();
 let opts = {
-  'body': new MadanaSampleclientJavascript.JsonMDNData() // JsonMDNData | 
+  'body': new MadanaApiclient.JsonMDNData() // JsonMDNData | 
 };
 apiInstance.authenticateCertificate(opts, (error, data, response) => {
   if (error) {
@@ -66,9 +66,9 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.CertificateServiceApi();
+let apiInstance = new MadanaApiclient.CertificateServiceApi();
 apiInstance.getCertificate((error, data, response) => {
   if (error) {
     console.error(error);
@@ -105,9 +105,9 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.CertificateServiceApi();
+let apiInstance = new MadanaApiclient.CertificateServiceApi();
 let fingerprint = "fingerprint_example"; // String | 
 apiInstance.getCertificate_0(fingerprint, (error, data, response) => {
   if (error) {

@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.JsonEnclaveRunningAttestationApprovalAllOf
+# MadanaApiclient.JsonEnclaveRunningAttestationApprovalAllOf
 
 ## Properties
 

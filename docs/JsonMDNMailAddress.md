@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.JsonMDNMailAddress
+# MadanaApiclient.JsonMDNMailAddress
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.JsonEnclaveProcess
+# MadanaApiclient.JsonEnclaveProcess
 
 ## Properties
 

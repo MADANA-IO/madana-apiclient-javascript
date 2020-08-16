@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.XmlNs0NodeInfoAllOf
+# MadanaApiclient.XmlNs0NodeInfoAllOf
 
 ## Properties
 

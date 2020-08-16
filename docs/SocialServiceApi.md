@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.SocialServiceApi
+# MadanaApiclient.SocialServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -22,9 +22,9 @@ Method | HTTP request | Description
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.SocialServiceApi();
+let apiInstance = new MadanaApiclient.SocialServiceApi();
 apiInstance.getMyProfile((error, data, response) => {
   if (error) {
     console.error(error);
@@ -63,9 +63,9 @@ Returns all Platforms / Systems that can be Connected to the MADANA Service
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.SocialServiceApi();
+let apiInstance = new MadanaApiclient.SocialServiceApi();
 apiInstance.getPlatforms2((error, data, response) => {
   if (error) {
     console.error(error);
@@ -104,9 +104,9 @@ Returns the Ranking by PTS within the System
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.SocialServiceApi();
+let apiInstance = new MadanaApiclient.SocialServiceApi();
 apiInstance.getRanking((error, data, response) => {
   if (error) {
     console.error(error);
@@ -143,9 +143,9 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.SocialServiceApi();
+let apiInstance = new MadanaApiclient.SocialServiceApi();
 let platform = "platform_example"; // String | 
 apiInstance.getSocialPlatformFeed(platform, (error, data, response) => {
   if (error) {
@@ -186,9 +186,9 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.SocialServiceApi();
+let apiInstance = new MadanaApiclient.SocialServiceApi();
 let username = "username_example"; // String | 
 let opts = {
   'simple': "'false'" // String | 
@@ -233,9 +233,9 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.SocialServiceApi();
+let apiInstance = new MadanaApiclient.SocialServiceApi();
 let username = "username_example"; // String | 
 apiInstance.getUserProfile_0(username, (error, data, response) => {
   if (error) {

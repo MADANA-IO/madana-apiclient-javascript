@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.XmlNs0EnclaveRunningAttestation
+# MadanaApiclient.XmlNs0EnclaveRunningAttestation
 
 ## Properties
 

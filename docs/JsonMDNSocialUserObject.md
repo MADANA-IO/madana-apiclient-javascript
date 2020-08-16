@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.JsonMDNSocialUserObject
+# MadanaApiclient.JsonMDNSocialUserObject
 
 ## Properties
 

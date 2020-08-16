@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.SystemServiceApi
+# MadanaApiclient.SystemServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -18,9 +18,9 @@ Method | HTTP request | Description
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.SystemServiceApi();
+let apiInstance = new MadanaApiclient.SystemServiceApi();
 apiInstance.getAllObjects((error, data, response) => {
   if (error) {
     console.error(error);
@@ -59,9 +59,9 @@ Return the current application usage
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.SystemServiceApi();
+let apiInstance = new MadanaApiclient.SystemServiceApi();
 apiInstance.getApplication((error, data, response) => {
   if (error) {
     console.error(error);

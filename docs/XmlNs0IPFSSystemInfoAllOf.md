@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.XmlNs0IPFSSystemInfoAllOf
+# MadanaApiclient.XmlNs0IPFSSystemInfoAllOf
 
 ## Properties
 

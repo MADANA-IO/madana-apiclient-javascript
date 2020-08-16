@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.XmlNs0DiskConfig
+# MadanaApiclient.XmlNs0DiskConfig
 
 ## Properties
 

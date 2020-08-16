@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.JsonMDNToken
+# MadanaApiclient.JsonMDNToken
 
 ## Properties
 

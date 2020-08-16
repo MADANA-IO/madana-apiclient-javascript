@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.XmlNs0SignedData
+# MadanaApiclient.XmlNs0SignedData
 
 ## Properties
 

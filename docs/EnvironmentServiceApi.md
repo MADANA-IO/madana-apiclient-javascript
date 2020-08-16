@@ -1,4 +1,4 @@
-# MadanaSampleclientJavascript.EnvironmentServiceApi
+# MadanaApiclient.EnvironmentServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
@@ -25,9 +25,9 @@ Method | HTTP request | Description
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.EnvironmentServiceApi();
+let apiInstance = new MadanaApiclient.EnvironmentServiceApi();
 let uuid = "uuid_example"; // String | 
 apiInstance.deleteEnvironment(uuid, (error, data, response) => {
   if (error) {
@@ -68,9 +68,9 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.EnvironmentServiceApi();
+let apiInstance = new MadanaApiclient.EnvironmentServiceApi();
 let uuid = "uuid_example"; // String | 
 apiInstance.deleteEnvironmentSubscription(uuid, (error, data, response) => {
   if (error) {
@@ -113,9 +113,9 @@ Returns UUIDs of existing analyses.
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.EnvironmentServiceApi();
+let apiInstance = new MadanaApiclient.EnvironmentServiceApi();
 let opts = {
   'authorization': "authorization_example", // String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
   'created': "'true'", // String | - if Queryparam \"created=true\" only the UUIDs of own Requests are shown
@@ -166,9 +166,9 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.EnvironmentServiceApi();
+let apiInstance = new MadanaApiclient.EnvironmentServiceApi();
 let uuid = "uuid_example"; // String | 
 apiInstance.getEnvironment(uuid, (error, data, response) => {
   if (error) {
@@ -209,9 +209,9 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.EnvironmentServiceApi();
+let apiInstance = new MadanaApiclient.EnvironmentServiceApi();
 let opts = {
   'limit': "'30'", // String | 
   'name': "name_example", // String | 
@@ -258,9 +258,9 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.EnvironmentServiceApi();
+let apiInstance = new MadanaApiclient.EnvironmentServiceApi();
 let opts = {
   'limit': "'30'", // String | 
   'offset': "'0'" // String | 
@@ -305,11 +305,11 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.EnvironmentServiceApi();
+let apiInstance = new MadanaApiclient.EnvironmentServiceApi();
 let opts = {
-  'body': new MadanaSampleclientJavascript.JsonEnvironmentPublishingRequest() // JsonEnvironmentPublishingRequest | 
+  'body': new MadanaApiclient.JsonEnvironmentPublishingRequest() // JsonEnvironmentPublishingRequest | 
 };
 apiInstance.publishEnvironment(opts, (error, data, response) => {
   if (error) {
@@ -350,9 +350,9 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.EnvironmentServiceApi();
+let apiInstance = new MadanaApiclient.EnvironmentServiceApi();
 let uuid = "uuid_example"; // String | 
 apiInstance.subscribeEnvironment(uuid, (error, data, response) => {
   if (error) {
@@ -393,12 +393,12 @@ No authorization required
 ### Example
 
 ```javascript
-import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaSampleclientJavascript.EnvironmentServiceApi();
+let apiInstance = new MadanaApiclient.EnvironmentServiceApi();
 let uuid = "uuid_example"; // String | 
 let opts = {
-  'body': new MadanaSampleclientJavascript.JsonEnvironment() // JsonEnvironment | 
+  'body': new MadanaApiclient.JsonEnvironment() // JsonEnvironment | 
 };
 apiInstance.updateEnvironment(uuid, opts, (error, data, response) => {
   if (error) {

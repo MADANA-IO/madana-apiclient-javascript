@@ -9,10 +9,11 @@ Method | HTTP request | Description
 [**createNewRequest**](RequestServiceApi.md#createNewRequest) | **POST** /requests | Endpoint used to create a new Analysis Request.
 [**getActions**](RequestServiceApi.md#getActions) | **GET** /requests/actions | 
 [**getAgent**](RequestServiceApi.md#getAgent) | **GET** /requests/{uuid}/agent | Is called from the APE to request all parked datasets.
-[**getAllRequests**](RequestServiceApi.md#getAllRequests) | **GET** /requests | Returns UUIDs of existing analyses.
+[**getAllRequests2**](RequestServiceApi.md#getAllRequests2) | **GET** /requests | Returns UUIDs of existing analyses.
 [**getData**](RequestServiceApi.md#getData) | **GET** /requests/{uuid}/data | Is called from the APE to request all parked datasets.
 [**getRequest**](RequestServiceApi.md#getRequest) | **GET** /requests/{uuid} | Returns the details for certain Request.
 [**getResult**](RequestServiceApi.md#getResult) | **GET** /requests/{uuid}/result | Can be called from creator to request the AnalysisResult.
+[**getStatus**](RequestServiceApi.md#getStatus) | **GET** /requests/stats | 
 [**giveConsent**](RequestServiceApi.md#giveConsent) | **POST** /requests/{uuid}/consent | Used to give consent for request.
 [**initRequestParameters**](RequestServiceApi.md#initRequestParameters) | **POST** /requests/{uuid} | Endpoint used initialized addition datacollection parameters for requester.
 [**setAgent**](RequestServiceApi.md#setAgent) | **POST** /requests/{uuid}/agent | Is called from the APE to request all parked datasets.
@@ -22,7 +23,7 @@ Method | HTTP request | Description
 
 ## addData
 
-> JsonAnalysis addData(uuid, opts)
+> File addData(uuid, opts)
 
 Is used to upload and park the data till the AnalysisRequest gets processed.
 
@@ -59,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonAnalysis**](JsonAnalysis.md)
+**File**
 
 ### Authorization
 
@@ -73,7 +74,7 @@ No authorization required
 
 ## cancelProcessing
 
-> JsonAnalysis cancelProcessing(uuid, opts)
+> File cancelProcessing(uuid, opts)
 
 Endpoint is called from the Analysis Processing entity to submit the result.
 
@@ -110,7 +111,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonAnalysis**](JsonAnalysis.md)
+**File**
 
 ### Authorization
 
@@ -267,9 +268,9 @@ No authorization required
 - **Accept**: application/json
 
 
-## getAllRequests
+## getAllRequests2
 
-> File getAllRequests(opts)
+> File getAllRequests2(opts)
 
 Returns UUIDs of existing analyses.
 
@@ -291,7 +292,7 @@ let opts = {
   'preview': "'false'", // String | 
   'ready': "'false'" // String | 
 };
-apiInstance.getAllRequests(opts, (error, data, response) => {
+apiInstance.getAllRequests2(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -379,7 +380,7 @@ No authorization required
 
 ## getRequest
 
-> JsonAnalysis getRequest(uuid, opts)
+> File getRequest(uuid, opts)
 
 Returns the details for certain Request.
 
@@ -414,7 +415,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonAnalysis**](JsonAnalysis.md)
+**File**
 
 ### Authorization
 
@@ -428,7 +429,7 @@ No authorization required
 
 ## getResult
 
-> JsonAnalysisResult getResult(uuid, opts)
+> File getResult(uuid, opts)
 
 Can be called from creator to request the AnalysisResult.
 
@@ -463,7 +464,46 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonAnalysisResult**](JsonAnalysisResult.md)
+**File**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getStatus
+
+> File getStatus()
+
+
+
+### Example
+
+```javascript
+import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+
+let apiInstance = new MadanaSampleclientJavascript.RequestServiceApi();
+apiInstance.getStatus((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+**File**
 
 ### Authorization
 
@@ -477,7 +517,7 @@ No authorization required
 
 ## giveConsent
 
-> JsonAnalysis giveConsent(uuid, opts)
+> File giveConsent(uuid, opts)
 
 Used to give consent for request.
 
@@ -512,7 +552,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonAnalysis**](JsonAnalysis.md)
+**File**
 
 ### Authorization
 
@@ -626,7 +666,7 @@ No authorization required
 
 ## setResult
 
-> JsonAnalysis setResult(uuid, opts)
+> File setResult(uuid, opts)
 
 Endpoint is called from the Analysis Processing entity to submit the result.
 
@@ -663,7 +703,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonAnalysis**](JsonAnalysis.md)
+**File**
 
 ### Authorization
 

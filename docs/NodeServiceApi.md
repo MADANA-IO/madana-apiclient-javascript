@@ -4,14 +4,15 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**getBootstrap**](NodeServiceApi.md#getBootstrap) | **GET** /nodes/bootstrap | 
 [**getNodes2**](NodeServiceApi.md#getNodes2) | **GET** /nodes | 
 [**postNodeInfo**](NodeServiceApi.md#postNodeInfo) | **POST** /nodes | 
 
 
 
-## getNodes2
+## getBootstrap
 
-> File getNodes2()
+> File getBootstrap()
 
 
 
@@ -21,7 +22,7 @@ Method | HTTP request | Description
 import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
 
 let apiInstance = new MadanaSampleclientJavascript.NodeServiceApi();
-apiInstance.getNodes2((error, data, response) => {
+apiInstance.getBootstrap((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -33,6 +34,51 @@ apiInstance.getNodes2((error, data, response) => {
 ### Parameters
 
 This endpoint does not need any parameter.
+
+### Return type
+
+**File**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getNodes2
+
+> File getNodes2(opts)
+
+
+
+### Example
+
+```javascript
+import MadanaSampleclientJavascript from 'madana-sampleclient-javascript';
+
+let apiInstance = new MadanaSampleclientJavascript.NodeServiceApi();
+let opts = {
+  'owner': "owner_example" // String | 
+};
+apiInstance.getNodes2(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **owner** | **String**|  | [optional] 
 
 ### Return type
 

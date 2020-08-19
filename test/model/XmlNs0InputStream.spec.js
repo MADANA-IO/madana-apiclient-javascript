@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new MadanaApiclient.JsonMDNMailAddress();
+    instance = new MadanaApiclient.XmlNs0InputStream();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,17 +47,11 @@
       object[property] = value;
   }
 
-  describe('JsonMDNMailAddress', function() {
-    it('should create an instance of JsonMDNMailAddress', function() {
-      // uncomment below and update the code to test JsonMDNMailAddress
-      //var instane = new MadanaApiclient.JsonMDNMailAddress();
-      //expect(instance).to.be.a(MadanaApiclient.JsonMDNMailAddress);
-    });
-
-    it('should have the property mail (base name: "mail")', function() {
-      // uncomment below and update the code to test the property mail
-      //var instane = new MadanaApiclient.JsonMDNMailAddress();
-      //expect(instance).to.be();
+  describe('XmlNs0InputStream', function() {
+    it('should create an instance of XmlNs0InputStream', function() {
+      // uncomment below and update the code to test XmlNs0InputStream
+      //var instane = new MadanaApiclient.XmlNs0InputStream();
+      //expect(instance).to.be.a(MadanaApiclient.XmlNs0InputStream);
     });
 
   });

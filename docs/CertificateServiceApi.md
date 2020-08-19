@@ -5,8 +5,8 @@ All URIs are relative to *http://api.madana.io/rest*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**authenticateCertificate**](CertificateServiceApi.md#authenticateCertificate) | **POST** /certificates | Issues certificates for logged-in users.
-[**getCertificate**](CertificateServiceApi.md#getCertificate) | **GET** /certificates/root | 
-[**getCertificate_0**](CertificateServiceApi.md#getCertificate_0) | **GET** /certificates/{fingerprint} | 
+[**getCertificateByFingerprint**](CertificateServiceApi.md#getCertificateByFingerprint) | **GET** /certificates/{fingerprint} | 
+[**getRootCertificate**](CertificateServiceApi.md#getRootCertificate) | **GET** /certificates/root | 
 
 
 
@@ -57,9 +57,9 @@ No authorization required
 - **Accept**: application/json
 
 
-## getCertificate
+## getCertificateByFingerprint
 
-> File getCertificate()
+> File getCertificateByFingerprint(fingerprint)
 
 
 
@@ -69,7 +69,8 @@ No authorization required
 import MadanaApiclient from 'madana-apiclient';
 
 let apiInstance = new MadanaApiclient.CertificateServiceApi();
-apiInstance.getCertificate((error, data, response) => {
+let fingerprint = "fingerprint_example"; // String | 
+apiInstance.getCertificateByFingerprint(fingerprint, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -80,7 +81,10 @@ apiInstance.getCertificate((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fingerprint** | **String**|  | 
 
 ### Return type
 
@@ -96,9 +100,9 @@ No authorization required
 - **Accept**: application/json
 
 
-## getCertificate_0
+## getRootCertificate
 
-> File getCertificate_0(fingerprint)
+> File getRootCertificate()
 
 
 
@@ -108,8 +112,7 @@ No authorization required
 import MadanaApiclient from 'madana-apiclient';
 
 let apiInstance = new MadanaApiclient.CertificateServiceApi();
-let fingerprint = "fingerprint_example"; // String | 
-apiInstance.getCertificate_0(fingerprint, (error, data, response) => {
+apiInstance.getRootCertificate((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -120,10 +123,7 @@ apiInstance.getCertificate_0(fingerprint, (error, data, response) => {
 
 ### Parameters
 
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fingerprint** | **String**|  | 
+This endpoint does not need any parameter.
 
 ### Return type
 

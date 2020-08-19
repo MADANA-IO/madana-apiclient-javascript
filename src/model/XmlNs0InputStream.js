@@ -12,22 +12,21 @@
  */
 
 import ApiClient from '../ApiClient';
-import XmlNs0EnclaveProcess from './XmlNs0EnclaveProcess';
-import XmlNs0NodeInfo from './XmlNs0NodeInfo';
 
 /**
- * The XmlNs0EnclaveRunningAttestationAllOf model module.
- * @module model/XmlNs0EnclaveRunningAttestationAllOf
+ * The XmlNs0InputStream model module.
+ * @module model/XmlNs0InputStream
  * @version 0.4.14-master.18
  */
-class XmlNs0EnclaveRunningAttestationAllOf {
+class XmlNs0InputStream {
     /**
-     * Constructs a new <code>XmlNs0EnclaveRunningAttestationAllOf</code>.
-     * @alias module:model/XmlNs0EnclaveRunningAttestationAllOf
+     * Constructs a new <code>XmlNs0InputStream</code>.
+     * 
+     * @alias module:model/XmlNs0InputStream
      */
     constructor() { 
         
-        XmlNs0EnclaveRunningAttestationAllOf.initialize(this);
+        XmlNs0InputStream.initialize(this);
     }
 
     /**
@@ -39,22 +38,16 @@ class XmlNs0EnclaveRunningAttestationAllOf {
     }
 
     /**
-     * Constructs a <code>XmlNs0EnclaveRunningAttestationAllOf</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>XmlNs0InputStream</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/XmlNs0EnclaveRunningAttestationAllOf} obj Optional instance to populate.
-     * @return {module:model/XmlNs0EnclaveRunningAttestationAllOf} The populated <code>XmlNs0EnclaveRunningAttestationAllOf</code> instance.
+     * @param {module:model/XmlNs0InputStream} obj Optional instance to populate.
+     * @return {module:model/XmlNs0InputStream} The populated <code>XmlNs0InputStream</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new XmlNs0EnclaveRunningAttestationAllOf();
+            obj = obj || new XmlNs0InputStream();
 
-            if (data.hasOwnProperty('enclaveProcess')) {
-                obj['enclaveProcess'] = XmlNs0EnclaveProcess.constructFromObject(data['enclaveProcess']);
-            }
-            if (data.hasOwnProperty('nodeInfo')) {
-                obj['nodeInfo'] = XmlNs0NodeInfo.constructFromObject(data['nodeInfo']);
-            }
         }
         return obj;
     }
@@ -62,20 +55,10 @@ class XmlNs0EnclaveRunningAttestationAllOf {
 
 }
 
-/**
- * @member {module:model/XmlNs0EnclaveProcess} enclaveProcess
- */
-XmlNs0EnclaveRunningAttestationAllOf.prototype['enclaveProcess'] = undefined;
-
-/**
- * @member {module:model/XmlNs0NodeInfo} nodeInfo
- */
-XmlNs0EnclaveRunningAttestationAllOf.prototype['nodeInfo'] = undefined;
 
 
 
 
 
-
-export default XmlNs0EnclaveRunningAttestationAllOf;
+export default XmlNs0InputStream;
 

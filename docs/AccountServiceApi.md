@@ -5,9 +5,9 @@ All URIs are relative to *http://api.madana.io/rest*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**activateUser**](AccountServiceApi.md#activateUser) | **GET** /account/activation/{token} | 
-[**createObject**](AccountServiceApi.md#createObject) | **POST** /account/password | Sends an Password reset mail to the given MailAddress.
+[**createPasswordReset**](AccountServiceApi.md#createPasswordReset) | **POST** /account/password | Sends an Password reset mail to the given MailAddress.
 [**requestVerificationMail**](AccountServiceApi.md#requestVerificationMail) | **GET** /account/verifymail | Used to request a new  activation-mail for the user.
-[**updateObject**](AccountServiceApi.md#updateObject) | **PUT** /account/password | Receives the Password reset and tries to set the provided password for the user.
+[**updatePassword**](AccountServiceApi.md#updatePassword) | **PUT** /account/password | Receives the Password reset and tries to set the provided password for the user.
 
 
 
@@ -54,9 +54,9 @@ No authorization required
 - **Accept**: application/json, application/xml
 
 
-## createObject
+## createPasswordReset
 
-> File createObject(opts)
+> File createPasswordReset(opts)
 
 Sends an Password reset mail to the given MailAddress.
 
@@ -71,7 +71,7 @@ let apiInstance = new MadanaApiclient.AccountServiceApi();
 let opts = {
   'body': new MadanaApiclient.JsonMDNMailAddress() // JsonMDNMailAddress | - the MaiAddress under which the user has signed up
 };
-apiInstance.createObject(opts, (error, data, response) => {
+apiInstance.createPasswordReset(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -142,9 +142,9 @@ No authorization required
 - **Accept**: application/json
 
 
-## updateObject
+## updatePassword
 
-> File updateObject(opts)
+> File updatePassword(opts)
 
 Receives the Password reset and tries to set the provided password for the user.
 
@@ -159,7 +159,7 @@ let apiInstance = new MadanaApiclient.AccountServiceApi();
 let opts = {
   'body': new MadanaApiclient.JsonMDNPasswordReset() // JsonMDNPasswordReset | - the MDN_PasswordReset Object
 };
-apiInstance.updateObject(opts, (error, data, response) => {
+apiInstance.updatePassword(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {

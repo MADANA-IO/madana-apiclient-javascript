@@ -4,7 +4,7 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**createObject2**](UserServiceApi.md#createObject2) | **POST** /users | Creates a new user object.
+[**createObject**](UserServiceApi.md#createObject) | **POST** /users | Creates a new user object.
 [**deleteObject**](UserServiceApi.md#deleteObject) | **DELETE** /users/{username} | Deletes an User based on the provided id and securitycontext.
 [**deleteObject_0**](UserServiceApi.md#deleteObject_0) | **DELETE** /users/{username}/social/{platform}/{ident} | Deletes linked account from the user and securitycontext.
 [**getAvatars**](UserServiceApi.md#getAvatars) | **GET** /users/{username}/avatars | 
@@ -12,13 +12,13 @@ Method | HTTP request | Description
 [**getObject2**](UserServiceApi.md#getObject2) | **GET** /users/{username} | 
 [**setAvatar**](UserServiceApi.md#setAvatar) | **POST** /users/{username}/avatars | 
 [**setSettings**](UserServiceApi.md#setSettings) | **POST** /users/{username}/settings | 
-[**updateObject2**](UserServiceApi.md#updateObject2) | **PUT** /users/{username} | Updates Userproperties based on the provided user object.
+[**updateObject**](UserServiceApi.md#updateObject) | **PUT** /users/{username} | Updates Userproperties based on the provided user object.
 
 
 
-## createObject2
+## createObject
 
-> File createObject2(opts)
+> File createObject(opts)
 
 Creates a new user object.
 
@@ -34,7 +34,7 @@ let opts = {
   'referrer': "referrer_example", // String | 
   'body': new MadanaApiclient.JsonMDNUser() // JsonMDNUser | provided user object inheriting properties and credentials
 };
-apiInstance.createObject2(opts, (error, data, response) => {
+apiInstance.createObject(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -382,9 +382,9 @@ No authorization required
 - **Accept**: application/json
 
 
-## updateObject2
+## updateObject
 
-> File updateObject2(username, opts)
+> File updateObject(username, opts)
 
 Updates Userproperties based on the provided user object.
 
@@ -400,7 +400,7 @@ let username = "username_example"; // String |
 let opts = {
   'body': new MadanaApiclient.JsonMDNUser() // JsonMDNUser | the new user object inherting all properties that should be change
 };
-apiInstance.updateObject2(username, opts, (error, data, response) => {
+apiInstance.updateObject(username, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {

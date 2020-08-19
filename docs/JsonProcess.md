@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**outputStream** | [**Object**](.md) |  | [optional] 
 **inputStream** | [**Object**](.md) |  | [optional] 
+**outputStream** | [**Object**](.md) |  | [optional] 
 **alive** | **Boolean** |  | [optional] 
 **errorStream** | [**Object**](.md) |  | [optional] 
 

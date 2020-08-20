@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**inputStream** | [**Object**](.md) |  | [optional] 
 **outputStream** | [**Object**](.md) |  | [optional] 
 **alive** | **Boolean** |  | [optional] 
-**inputStream** | [**Object**](.md) |  | [optional] 
 **errorStream** | [**Object**](.md) |  | [optional] 
 
 

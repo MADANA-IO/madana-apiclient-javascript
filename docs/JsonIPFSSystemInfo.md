@@ -6,8 +6,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **swarmConnection** | **String** |  | [optional] 
 **id** | **String** |  | [optional] 
-**protocolVersion** | **String** |  | [optional] 
-**publicKey** | **String** |  | [optional] 
 **agentVersion** | **String** |  | [optional] 
+**publicKey** | **String** |  | [optional] 
+**protocolVersion** | **String** |  | [optional] 
 
 

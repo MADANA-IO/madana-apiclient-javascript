@@ -4,21 +4,21 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**cpuPhysicalCores** | **Number** |  | [optional] 
-**connectionURL** | **String** |  | [optional] 
-**memory** | **String** |  | [optional] 
-**processors** | **[String]** |  | [optional] 
-**cpuFrequency** | **String** |  | [optional] 
-**ipfsInfo** | [**JsonIPFSSystemInfo**](JsonIPFSSystemInfo.md) |  | [optional] 
+**hardwareFirmware** | **String** |  | [optional] 
+**cpuModel** | **String** |  | [optional] 
 **publicKey** | **String** |  | [optional] 
-**hardwareBaseboard** | **String** |  | [optional] 
 **cpuLogicalCount** | **Number** |  | [optional] 
 **owner** | **String** |  | [optional] 
-**operatingSystemUptime** | **Number** |  | [optional] 
-**cpuFamily** | **String** |  | [optional] 
-**hardwareFirmware** | **String** |  | [optional] 
+**cpuFrequency** | **String** |  | [optional] 
+**memory** | **String** |  | [optional] 
 **status** | **String** |  | [optional] 
+**hardwareBaseboard** | **String** |  | [optional] 
+**cpuFamily** | **String** |  | [optional] 
+**connectionURL** | **String** |  | [optional] 
+**cpuPhysicalCores** | **Number** |  | [optional] 
+**ipfsInfo** | [**JsonIPFSSystemInfo**](JsonIPFSSystemInfo.md) |  | [optional] 
+**processors** | **[String]** |  | [optional] 
+**operatingSystemUptime** | **Number** |  | [optional] 
 **operatingSystem** | **String** |  | [optional] 
-**cpuModel** | **String** |  | [optional] 
 
 

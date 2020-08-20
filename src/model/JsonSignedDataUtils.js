@@ -12,23 +12,21 @@
  */
 
 import ApiClient from '../ApiClient';
-import XmlNs0MDNSettingAllOf from './XmlNs0MDNSettingAllOf';
 
 /**
- * The XmlNs0MDNSetting model module.
- * @module model/XmlNs0MDNSetting
+ * The JsonSignedDataUtils model module.
+ * @module model/JsonSignedDataUtils
  * @version 0.4.14-master.21
  */
-class XmlNs0MDNSetting {
+class JsonSignedDataUtils {
     /**
-     * Constructs a new <code>XmlNs0MDNSetting</code>.
+     * Constructs a new <code>JsonSignedDataUtils</code>.
      * 
-     * @alias module:model/XmlNs0MDNSetting
-     * @implements module:model/XmlNs0MDNSettingAllOf
+     * @alias module:model/JsonSignedDataUtils
      */
     constructor() { 
-        XmlNs0MDNSettingAllOf.initialize(this);
-        XmlNs0MDNSetting.initialize(this);
+        
+        JsonSignedDataUtils.initialize(this);
     }
 
     /**
@@ -40,25 +38,24 @@ class XmlNs0MDNSetting {
     }
 
     /**
-     * Constructs a <code>XmlNs0MDNSetting</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>JsonSignedDataUtils</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/XmlNs0MDNSetting} obj Optional instance to populate.
-     * @return {module:model/XmlNs0MDNSetting} The populated <code>XmlNs0MDNSetting</code> instance.
+     * @param {module:model/JsonSignedDataUtils} obj Optional instance to populate.
+     * @return {module:model/JsonSignedDataUtils} The populated <code>JsonSignedDataUtils</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new XmlNs0MDNSetting();
-            XmlNs0MDNSettingAllOf.constructFromObject(data, obj);
+            obj = obj || new JsonSignedDataUtils();
 
-            if (data.hasOwnProperty('description')) {
-                obj['description'] = ApiClient.convertToType(data['description'], 'String');
+            if (data.hasOwnProperty('fingerpint')) {
+                obj['fingerpint'] = ApiClient.convertToType(data['fingerpint'], 'String');
             }
-            if (data.hasOwnProperty('id')) {
-                obj['id'] = ApiClient.convertToType(data['id'], 'String');
+            if (data.hasOwnProperty('signature')) {
+                obj['signature'] = ApiClient.convertToType(data['signature'], 'String');
             }
-            if (data.hasOwnProperty('name')) {
-                obj['name'] = ApiClient.convertToType(data['name'], 'String');
+            if (data.hasOwnProperty('data')) {
+                obj['data'] = ApiClient.convertToType(data['data'], 'String');
             }
         }
         return obj;
@@ -69,42 +66,26 @@ class XmlNs0MDNSetting {
 
 /**
  * 
- * @member {String} description
+ * @member {String} fingerpint
  */
-XmlNs0MDNSetting.prototype['description'] = undefined;
+JsonSignedDataUtils.prototype['fingerpint'] = undefined;
 
 /**
  * 
- * @member {String} id
+ * @member {String} signature
  */
-XmlNs0MDNSetting.prototype['id'] = undefined;
+JsonSignedDataUtils.prototype['signature'] = undefined;
 
 /**
  * 
- * @member {String} name
+ * @member {String} data
  */
-XmlNs0MDNSetting.prototype['name'] = undefined;
-
-
-// Implement XmlNs0MDNSettingAllOf interface:
-/**
- * 
- * @member {String} description
- */
-XmlNs0MDNSettingAllOf.prototype['description'] = undefined;
-/**
- * 
- * @member {String} id
- */
-XmlNs0MDNSettingAllOf.prototype['id'] = undefined;
-/**
- * 
- * @member {String} name
- */
-XmlNs0MDNSettingAllOf.prototype['name'] = undefined;
+JsonSignedDataUtils.prototype['data'] = undefined;
 
 
 
 
-export default XmlNs0MDNSetting;
+
+
+export default JsonSignedDataUtils;
 

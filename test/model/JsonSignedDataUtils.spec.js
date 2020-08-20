@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new MadanaApiclient.XmlNs0WireguardInterface();
+    instance = new MadanaApiclient.JsonSignedDataUtils();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,16 +47,28 @@
       object[property] = value;
   }
 
-  describe('XmlNs0WireguardInterface', function() {
-    it('should create an instance of XmlNs0WireguardInterface', function() {
-      // uncomment below and update the code to test XmlNs0WireguardInterface
-      //var instane = new MadanaApiclient.XmlNs0WireguardInterface();
-      //expect(instance).to.be.a(MadanaApiclient.XmlNs0WireguardInterface);
+  describe('JsonSignedDataUtils', function() {
+    it('should create an instance of JsonSignedDataUtils', function() {
+      // uncomment below and update the code to test JsonSignedDataUtils
+      //var instane = new MadanaApiclient.JsonSignedDataUtils();
+      //expect(instance).to.be.a(MadanaApiclient.JsonSignedDataUtils);
     });
 
-    it('should have the property port (base name: "port")', function() {
-      // uncomment below and update the code to test the property port
-      //var instane = new MadanaApiclient.XmlNs0WireguardInterface();
+    it('should have the property fingerpint (base name: "fingerpint")', function() {
+      // uncomment below and update the code to test the property fingerpint
+      //var instane = new MadanaApiclient.JsonSignedDataUtils();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property signature (base name: "signature")', function() {
+      // uncomment below and update the code to test the property signature
+      //var instane = new MadanaApiclient.JsonSignedDataUtils();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property data (base name: "data")', function() {
+      // uncomment below and update the code to test the property data
+      //var instane = new MadanaApiclient.JsonSignedDataUtils();
       //expect(instance).to.be();
     });
 

@@ -4,6 +4,7 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**addHistory**](EnclaveServiceApi.md#addHistory) | **POST** /enclaves/{uuid}/history | 
 [**approveEnclave**](EnclaveServiceApi.md#approveEnclave) | **POST** /enclaves/{uuid}/approval | 
 [**assignEnclaveAgent**](EnclaveServiceApi.md#assignEnclaveAgent) | **POST** /enclaves/{uuid}/assign | 
 [**attestateEnclave**](EnclaveServiceApi.md#attestateEnclave) | **POST** /enclaves/{uuid}/attestation | 
@@ -13,6 +14,53 @@ Method | HTTP request | Description
 [**getEnclaves**](EnclaveServiceApi.md#getEnclaves) | **GET** /enclaves | Returns UUIDs of existing analyses.
 [**killEnclave**](EnclaveServiceApi.md#killEnclave) | **POST** /enclaves/{uuid}/kill | 
 
+
+
+## addHistory
+
+> File addHistory(uuid, opts)
+
+
+
+### Example
+
+```javascript
+import MadanaApiclient from 'madana-apiclient';
+
+let apiInstance = new MadanaApiclient.EnclaveServiceApi();
+let uuid = "uuid_example"; // String | 
+let opts = {
+  'body': new MadanaApiclient.JsonSignedData() // JsonSignedData | 
+};
+apiInstance.addHistory(uuid, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **uuid** | **String**|  | 
+ **body** | [**JsonSignedData**](JsonSignedData.md)|  | [optional] 
+
+### Return type
+
+**File**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: application/json, application/xml
+- **Accept**: application/json
 
 
 ## approveEnclave

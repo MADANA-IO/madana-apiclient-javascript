@@ -4,22 +4,22 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**startupTime** | **String** |  | [optional] 
-**internalRemoteControlServer** | **String** |  | [optional] 
+**signerIdent** | **String** |  | [optional] 
+**enclaveInputstream** | [**Object**](.md) |  | [optional] 
+**status** | **String** |  | [optional] 
+**wgInterface** | [**JsonWireguardInterface**](JsonWireguardInterface.md) |  | [optional] 
+**internalIdent** | **String** |  | [optional] 
 **wireguardPublicKey** | **String** |  | [optional] 
 **consoleOutput** | **String** |  | [optional] 
-**enclaveIdent** | **String** |  | [optional] 
-**signerIdent** | **String** |  | [optional] 
-**endingTime** | **String** |  | [optional] 
+**startupTime** | **String** |  | [optional] 
+**internalRemoteControlServer** | **String** |  | [optional] 
 **remoteControlServer** | **String** |  | [optional] 
-**attestationServer** | **String** |  | [optional] 
+**internalAttesationServer** | **String** |  | [optional] 
 **environment** | [**JsonEnvironment**](JsonEnvironment.md) |  | [optional] 
 **process** | [**JsonProcess**](JsonProcess.md) |  | [optional] 
-**status** | **String** |  | [optional] 
+**endingTime** | **String** |  | [optional] 
+**enclaveIdent** | **String** |  | [optional] 
+**attestationServer** | **String** |  | [optional] 
 **startupCMD** | **String** |  | [optional] 
-**enclaveInputstream** | [**Object**](.md) |  | [optional] 
-**internalIdent** | **String** |  | [optional] 
-**internalAttesationServer** | **String** |  | [optional] 
-**wgInterface** | [**JsonWireguardInterface**](JsonWireguardInterface.md) |  | [optional] 
 
 

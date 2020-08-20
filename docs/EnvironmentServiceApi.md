@@ -6,8 +6,8 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**deleteEnvironment**](EnvironmentServiceApi.md#deleteEnvironment) | **DELETE** /environments/{uuid} | 
 [**deleteEnvironmentSubscription**](EnvironmentServiceApi.md#deleteEnvironmentSubscription) | **DELETE** /environments/{uuid}/subscribe | 
-[**getAllRequests**](EnvironmentServiceApi.md#getAllRequests) | **GET** /environments | Returns UUIDs of existing analyses.
 [**getEnvironment**](EnvironmentServiceApi.md#getEnvironment) | **GET** /environments/{uuid} | 
+[**getEnvironments**](EnvironmentServiceApi.md#getEnvironments) | **GET** /environments | Returns UUIDs of existing analyses.
 [**getPublishedEnvironments**](EnvironmentServiceApi.md#getPublishedEnvironments) | **GET** /environments/published | 
 [**getSubscribedEnvironments**](EnvironmentServiceApi.md#getSubscribedEnvironments) | **GET** /environments/subscriptions | 
 [**publishEnvironment**](EnvironmentServiceApi.md#publishEnvironment) | **POST** /environments | 
@@ -102,61 +102,6 @@ No authorization required
 - **Accept**: application/json
 
 
-## getAllRequests
-
-> File getAllRequests(opts)
-
-Returns UUIDs of existing analyses.
-
-Returns UUIDs of existing analyses.
-
-### Example
-
-```javascript
-import MadanaApiclient from 'madana-apiclient';
-
-let apiInstance = new MadanaApiclient.EnvironmentServiceApi();
-let opts = {
-  'authorization': "authorization_example", // String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
-  'created': "'true'", // String | - if Queryparam \"created=true\" only the UUIDs of own Requests are shown
-  'limit': "'30'", // String | Used for offset pagination. Limit/Offset Paging would look like GET /request?limit=20&offset=100. This query would return the 20 rows starting with the 100th row
-  'name': "name_example", // String | 
-  'offset': "'0'" // String | Used for offset pagination. Limit/Offset Paging would look like GET /request?limit=20&offset=100. This query would return the 20 rows starting with the 100th row
-};
-apiInstance.getAllRequests(opts, (error, data, response) => {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-});
-```
-
-### Parameters
-
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **authorization** | **String**| Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c | [optional] 
- **created** | **String**| - if Queryparam \&quot;created&#x3D;true\&quot; only the UUIDs of own Requests are shown | [optional] [default to &#39;true&#39;]
- **limit** | **String**| Used for offset pagination. Limit/Offset Paging would look like GET /request?limit&#x3D;20&amp;offset&#x3D;100. This query would return the 20 rows starting with the 100th row | [optional] [default to &#39;30&#39;]
- **name** | **String**|  | [optional] 
- **offset** | **String**| Used for offset pagination. Limit/Offset Paging would look like GET /request?limit&#x3D;20&amp;offset&#x3D;100. This query would return the 20 rows starting with the 100th row | [optional] [default to &#39;0&#39;]
-
-### Return type
-
-**File**
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: application/json
-
-
 ## getEnvironment
 
 > File getEnvironment(uuid)
@@ -185,6 +130,61 @@ apiInstance.getEnvironment(uuid, (error, data, response) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **uuid** | **String**|  | 
+
+### Return type
+
+**File**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getEnvironments
+
+> File getEnvironments(opts)
+
+Returns UUIDs of existing analyses.
+
+Returns UUIDs of existing analyses.
+
+### Example
+
+```javascript
+import MadanaApiclient from 'madana-apiclient';
+
+let apiInstance = new MadanaApiclient.EnvironmentServiceApi();
+let opts = {
+  'authorization': "authorization_example", // String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+  'created': "'true'", // String | - if Queryparam \"created=true\" only the UUIDs of own Requests are shown
+  'limit': "'30'", // String | Used for offset pagination. Limit/Offset Paging would look like GET /request?limit=20&offset=100. This query would return the 20 rows starting with the 100th row
+  'name': "name_example", // String | 
+  'offset': "'0'" // String | Used for offset pagination. Limit/Offset Paging would look like GET /request?limit=20&offset=100. This query would return the 20 rows starting with the 100th row
+};
+apiInstance.getEnvironments(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **authorization** | **String**| Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c | [optional] 
+ **created** | **String**| - if Queryparam \&quot;created&#x3D;true\&quot; only the UUIDs of own Requests are shown | [optional] [default to &#39;true&#39;]
+ **limit** | **String**| Used for offset pagination. Limit/Offset Paging would look like GET /request?limit&#x3D;20&amp;offset&#x3D;100. This query would return the 20 rows starting with the 100th row | [optional] [default to &#39;30&#39;]
+ **name** | **String**|  | [optional] 
+ **offset** | **String**| Used for offset pagination. Limit/Offset Paging would look like GET /request?limit&#x3D;20&amp;offset&#x3D;100. This query would return the 20 rows starting with the 100th row | [optional] [default to &#39;0&#39;]
 
 ### Return type
 

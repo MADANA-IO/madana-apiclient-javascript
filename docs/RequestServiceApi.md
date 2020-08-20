@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**createNewRequest**](RequestServiceApi.md#createNewRequest) | **POST** /requests | Endpoint used to create a new Analysis Request.
 [**getActions**](RequestServiceApi.md#getActions) | **GET** /requests/actions | 
 [**getAgent**](RequestServiceApi.md#getAgent) | **GET** /requests/{uuid}/agent | Is called from the APE to request all parked datasets.
-[**getAllRequests2**](RequestServiceApi.md#getAllRequests2) | **GET** /requests | Returns UUIDs of existing analyses.
+[**getAllRequests**](RequestServiceApi.md#getAllRequests) | **GET** /requests | Returns UUIDs of existing analyses.
 [**getData**](RequestServiceApi.md#getData) | **GET** /requests/{uuid}/data | Is called from the APE to request all parked datasets.
 [**getRequest**](RequestServiceApi.md#getRequest) | **GET** /requests/{uuid} | Returns the details for certain Request.
 [**getResult**](RequestServiceApi.md#getResult) | **GET** /requests/{uuid}/result | Can be called from creator to request the AnalysisResult.
@@ -268,9 +268,9 @@ No authorization required
 - **Accept**: application/json
 
 
-## getAllRequests2
+## getAllRequests
 
-> File getAllRequests2(opts)
+> File getAllRequests(opts)
 
 Returns UUIDs of existing analyses.
 
@@ -292,7 +292,7 @@ let opts = {
   'preview': "'false'", // String | 
   'ready': "'false'" // String | 
 };
-apiInstance.getAllRequests2(opts, (error, data, response) => {
+apiInstance.getAllRequests(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {

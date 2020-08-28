@@ -9,6 +9,7 @@ Method | HTTP request | Description
 [**deleteObject_0**](UserServiceApi.md#deleteObject_0) | **DELETE** /users/{username}/social/{platform}/{ident} | Deletes linked account from the user and securitycontext.
 [**getAvatars**](UserServiceApi.md#getAvatars) | **GET** /users/{username}/avatars | 
 [**getCertificates**](UserServiceApi.md#getCertificates) | **GET** /users/{username}/certificates | 
+[**getEnclaveHistory**](UserServiceApi.md#getEnclaveHistory) | **GET** /users/{username}/enclavehistory | 
 [**getObject2**](UserServiceApi.md#getObject2) | **GET** /users/{username} | 
 [**setAvatar**](UserServiceApi.md#setAvatar) | **POST** /users/{username}/avatars | 
 [**setSettings**](UserServiceApi.md#setSettings) | **POST** /users/{username}/settings | 
@@ -230,6 +231,55 @@ apiInstance.getCertificates(username, (error, data, response) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **username** | **String**|  | 
+
+### Return type
+
+**File**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getEnclaveHistory
+
+> File getEnclaveHistory(username, opts)
+
+
+
+### Example
+
+```javascript
+import MadanaApiclient from 'madana-apiclient';
+
+let apiInstance = new MadanaApiclient.UserServiceApi();
+let username = "username_example"; // String | 
+let opts = {
+  'limit': "'30'", // String | 
+  'offset': "'0'" // String | 
+};
+apiInstance.getEnclaveHistory(username, opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **username** | **String**|  | 
+ **limit** | **String**|  | [optional] [default to &#39;30&#39;]
+ **offset** | **String**|  | [optional] [default to &#39;0&#39;]
 
 ### Return type
 

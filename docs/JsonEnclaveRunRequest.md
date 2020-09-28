@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**enclaveExecutionType** | **String** |  | [optional] 
 **environmentUUID** | **String** |  | [optional] 
 **usingDefaultRunConfig** | **Boolean** |  | [optional] 
-**enclaveExecutionType** | **String** |  | [optional] 
 **wireguardPublicKey** | **String** |  | [optional] 
 
 

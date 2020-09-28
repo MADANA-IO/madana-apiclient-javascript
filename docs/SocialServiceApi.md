@@ -95,7 +95,7 @@ No authorization required
 
 ## getRanking
 
-> File getRanking()
+> File getRanking(opts)
 
 Returns the Ranking by PTS within the System.
 
@@ -107,7 +107,11 @@ Returns the Ranking by PTS within the System
 import MadanaApiclient from 'madana-apiclient';
 
 let apiInstance = new MadanaApiclient.SocialServiceApi();
-apiInstance.getRanking((error, data, response) => {
+let opts = {
+  'limit': "'99'", // String | 
+  'offset': "'0'" // String | 
+};
+apiInstance.getRanking(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -118,7 +122,11 @@ apiInstance.getRanking((error, data, response) => {
 
 ### Parameters
 
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **limit** | **String**|  | [optional] [default to &#39;99&#39;]
+ **offset** | **String**|  | [optional] [default to &#39;0&#39;]
 
 ### Return type
 

@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **internalAttesationServer** | **String** |  | [optional] 
 **internalIdent** | **String** |  | [optional] 
 **internalRemoteControlServer** | **String** |  | [optional] 
+**internalWireguardServer** | **String** |  | [optional] 
 **process** | [**XmlNs0Process**](XmlNs0Process.md) |  | [optional] 
 **publicIdent** | **String** |  | [optional] 
 **remoteControlServer** | **String** |  | [optional] 
@@ -22,5 +23,6 @@ Name | Type | Description | Notes
 **status** | **String** |  | [optional] 
 **wgInterface** | [**XmlNs0WireguardInterface**](XmlNs0WireguardInterface.md) |  | [optional] 
 **wireguardPublicKey** | **String** |  | [optional] 
+**wireguardServer** | **String** |  | [optional] 
 
 

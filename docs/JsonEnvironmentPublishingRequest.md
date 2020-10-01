@@ -4,14 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ipfsHash** | **String** |  | [optional] 
+**isPublic** | **String** |  | [optional] 
 **name** | **String** |  | [optional] 
-**ipfsPrimaryPeer** | **String** |  | [optional] 
+**uuid** | **String** |  | [optional] 
 **content** | **String** |  | [optional] 
 **size** | **String** |  | [optional] 
-**isPublic** | **String** |  | [optional] 
-**description** | **String** |  | [optional] 
+**ipfsPrimaryPeer** | **String** |  | [optional] 
 **packages** | **String** |  | [optional] 
-**uuid** | **String** |  | [optional] 
+**ipfsHash** | **String** |  | [optional] 
+**description** | **String** |  | [optional] 
 
 

@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **owner** | **String** |  | [optional] 
 **processors** | **[String]** |  | [optional] 
 **publicKey** | **String** |  | [optional] 
+**sgxInfo** | [**XmlNs0SGXInfo**](XmlNs0SGXInfo.md) |  | [optional] 
 **status** | **String** |  | [optional] 
 
 

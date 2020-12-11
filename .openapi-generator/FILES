@@ -1,4 +1,5 @@
 .babelrc
+.gitignore
 .openapi-generator-ignore
 .travis.yml
 README.md
@@ -9,6 +10,7 @@ docs/DataCollectionServiceApi.md
 docs/EnclaveServiceApi.md
 docs/EnvironmentServiceApi.md
 docs/JsonDiskConfig.md
+docs/JsonEnclavePort.md
 docs/JsonEnclaveProcess.md
 docs/JsonEnclaveRunRequest.md
 docs/JsonEnclaveRunningAttestation.md
@@ -36,6 +38,7 @@ docs/JsonNetworkInterface.md
 docs/JsonNodeInfo.md
 docs/JsonProcess.md
 docs/JsonRunConfig.md
+docs/JsonSGXInfo.md
 docs/JsonSignedData.md
 docs/JsonSignedDataUtils.md
 docs/JsonWireguardInterface.md
@@ -49,6 +52,8 @@ docs/SystemServiceApi.md
 docs/UserServiceApi.md
 docs/XmlNs0DiskConfig.md
 docs/XmlNs0DiskConfigAllOf.md
+docs/XmlNs0EnclavePort.md
+docs/XmlNs0EnclavePortAllOf.md
 docs/XmlNs0EnclaveProcess.md
 docs/XmlNs0EnclaveProcessAllOf.md
 docs/XmlNs0EnclaveRunningAttestation.md
@@ -73,6 +78,8 @@ docs/XmlNs0NodeInfoAllOf.md
 docs/XmlNs0Process.md
 docs/XmlNs0RunConfig.md
 docs/XmlNs0RunConfigAllOf.md
+docs/XmlNs0SGXInfo.md
+docs/XmlNs0SGXInfoAllOf.md
 docs/XmlNs0SignedData.md
 docs/XmlNs0SignedDataAllOf.md
 docs/XmlNs0WireguardInterface.md
@@ -96,6 +103,7 @@ src/api/SystemServiceApi.js
 src/api/UserServiceApi.js
 src/index.js
 src/model/JsonDiskConfig.js
+src/model/JsonEnclavePort.js
 src/model/JsonEnclaveProcess.js
 src/model/JsonEnclaveRunRequest.js
 src/model/JsonEnclaveRunningAttestation.js
@@ -123,12 +131,15 @@ src/model/JsonNetworkInterface.js
 src/model/JsonNodeInfo.js
 src/model/JsonProcess.js
 src/model/JsonRunConfig.js
+src/model/JsonSGXInfo.js
 src/model/JsonSignedData.js
 src/model/JsonSignedDataUtils.js
 src/model/JsonWireguardInterface.js
 src/model/JsonWireguardInterfaceAllOf.js
 src/model/XmlNs0DiskConfig.js
 src/model/XmlNs0DiskConfigAllOf.js
+src/model/XmlNs0EnclavePort.js
+src/model/XmlNs0EnclavePortAllOf.js
 src/model/XmlNs0EnclaveProcess.js
 src/model/XmlNs0EnclaveProcessAllOf.js
 src/model/XmlNs0EnclaveRunningAttestation.js
@@ -153,6 +164,8 @@ src/model/XmlNs0NodeInfoAllOf.js
 src/model/XmlNs0Process.js
 src/model/XmlNs0RunConfig.js
 src/model/XmlNs0RunConfigAllOf.js
+src/model/XmlNs0SGXInfo.js
+src/model/XmlNs0SGXInfoAllOf.js
 src/model/XmlNs0SignedData.js
 src/model/XmlNs0SignedDataAllOf.js
 src/model/XmlNs0WireguardInterface.js
@@ -171,6 +184,7 @@ test/api/SocialServiceApi.spec.js
 test/api/SystemServiceApi.spec.js
 test/api/UserServiceApi.spec.js
 test/model/JsonDiskConfig.spec.js
+test/model/JsonEnclavePort.spec.js
 test/model/JsonEnclaveProcess.spec.js
 test/model/JsonEnclaveRunRequest.spec.js
 test/model/JsonEnclaveRunningAttestation.spec.js
@@ -198,12 +212,15 @@ test/model/JsonNetworkInterface.spec.js
 test/model/JsonNodeInfo.spec.js
 test/model/JsonProcess.spec.js
 test/model/JsonRunConfig.spec.js
+test/model/JsonSGXInfo.spec.js
 test/model/JsonSignedData.spec.js
 test/model/JsonSignedDataUtils.spec.js
 test/model/JsonWireguardInterface.spec.js
 test/model/JsonWireguardInterfaceAllOf.spec.js
 test/model/XmlNs0DiskConfig.spec.js
 test/model/XmlNs0DiskConfigAllOf.spec.js
+test/model/XmlNs0EnclavePort.spec.js
+test/model/XmlNs0EnclavePortAllOf.spec.js
 test/model/XmlNs0EnclaveProcess.spec.js
 test/model/XmlNs0EnclaveProcessAllOf.spec.js
 test/model/XmlNs0EnclaveRunningAttestation.spec.js
@@ -228,6 +245,8 @@ test/model/XmlNs0NodeInfoAllOf.spec.js
 test/model/XmlNs0Process.spec.js
 test/model/XmlNs0RunConfig.spec.js
 test/model/XmlNs0RunConfigAllOf.spec.js
+test/model/XmlNs0SGXInfo.spec.js
+test/model/XmlNs0SGXInfoAllOf.spec.js
 test/model/XmlNs0SignedData.spec.js
 test/model/XmlNs0SignedDataAllOf.spec.js
 test/model/XmlNs0WireguardInterface.spec.js

@@ -14,6 +14,8 @@ Name | Type | Description | Notes
 **internalIdent** | **String** |  | [optional] 
 **internalRemoteControlServer** | **String** |  | [optional] 
 **internalWireguardServer** | **String** |  | [optional] 
+**portMapping** | **Object** |  | [optional] 
+**ports** | [**[XmlNs0EnclavePort]**](XmlNs0EnclavePort.md) |  | [optional] 
 **process** | [**XmlNs0Process**](XmlNs0Process.md) |  | [optional] 
 **publicIdent** | **String** |  | [optional] 
 **remoteControlServer** | **String** |  | [optional] 

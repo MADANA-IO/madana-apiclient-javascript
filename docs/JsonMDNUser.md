@@ -4,17 +4,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**activated** | **String** |  | [optional] 
 **lastActive** | **String** |  | [optional] 
 **created** | **String** |  | [optional] 
-**userName** | **String** |  | [optional] 
 **image** | **String** |  | [optional] 
-**firstName** | **String** |  | [optional] 
-**mail** | **String** |  | [optional] 
-**lastName** | **String** |  | [optional] 
+**userName** | **String** |  | [optional] 
+**activated** | **String** |  | [optional] 
 **settings** | [**[JsonMDNUserSetting]**](JsonMDNUserSetting.md) |  | [optional] 
-**guid** | **String** |  | [optional] 
 **credentials** | [**JsonMDNUserCredentials**](JsonMDNUserCredentials.md) |  | [optional] 
+**firstName** | **String** |  | [optional] 
+**lastName** | **String** |  | [optional] 
+**mail** | **String** |  | [optional] 
 **socialAccounts** | [**[JsonMDNSocialUserObject]**](JsonMDNSocialUserObject.md) |  | [optional] 
+**guid** | **String** |  | [optional] 
 
 

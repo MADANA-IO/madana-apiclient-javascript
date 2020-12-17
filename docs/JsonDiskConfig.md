@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**roothashOffset** | **Number** |  | [optional] 
-**readonly** | **Boolean** |  | [optional] 
-**disk** | **String** |  | [optional] 
 **roothash** | **String** |  | [optional] 
+**disk** | **String** |  | [optional] 
+**readonly** | **Boolean** |  | [optional] 
+**roothashOffset** | **Number** |  | [optional] 
 
 

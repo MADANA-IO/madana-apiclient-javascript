@@ -13,6 +13,7 @@ Method | HTTP request | Description
 [**getEnclaveTypes**](EnclaveServiceApi.md#getEnclaveTypes) | **GET** /enclaves/types | 
 [**getEnclaves**](EnclaveServiceApi.md#getEnclaves) | **GET** /enclaves | Returns UUIDs of existing analyses.
 [**killEnclave**](EnclaveServiceApi.md#killEnclave) | **POST** /enclaves/{uuid}/kill | 
+[**redistTest**](EnclaveServiceApi.md#redistTest) | **GET** /enclaves/test/redis | 
 
 
 
@@ -414,6 +415,45 @@ apiInstance.killEnclave(uuid, (error, data, response) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **uuid** | **String**|  | 
+
+### Return type
+
+**File**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## redistTest
+
+> File redistTest()
+
+
+
+### Example
+
+```javascript
+import MadanaApiclient from 'madana-apiclient';
+
+let apiInstance = new MadanaApiclient.EnclaveServiceApi();
+apiInstance.redistTest((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+This endpoint does not need any parameter.
 
 ### Return type
 

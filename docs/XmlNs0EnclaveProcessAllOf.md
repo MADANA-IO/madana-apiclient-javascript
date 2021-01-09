@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **internalIdent** | **String** |  | [optional] 
 **internalRemoteControlServer** | **String** |  | [optional] 
 **internalWireguardServer** | **String** |  | [optional] 
+**kubernetesEnclave** | [**XmlNs0KubernetesEnclave**](XmlNs0KubernetesEnclave.md) |  | [optional] 
 **portMapping** | **Object** |  | [optional] 
 **ports** | [**[XmlNs0EnclavePort]**](XmlNs0EnclavePort.md) |  | [optional] 
 **process** | [**XmlNs0Process**](XmlNs0Process.md) |  | [optional] 

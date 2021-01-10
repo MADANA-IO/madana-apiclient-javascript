@@ -5,10 +5,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **operation** | **String** |  | [optional] 
-**manager** | **String** |  | [optional] 
-**fieldsV1** | **Object** |  | [optional] 
-**apiVersion** | **String** |  | [optional] 
 **time** | **Number** |  | [optional] 
+**manager** | **String** |  | [optional] 
+**apiVersion** | **String** |  | [optional] 
+**fieldsV1** | **Object** |  | [optional] 
 **fieldsType** | **String** |  | [optional] 
 
 

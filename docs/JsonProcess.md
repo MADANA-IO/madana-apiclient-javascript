@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**inputStream** | **Object** |  | [optional] 
 **errorStream** | **Object** |  | [optional] 
 **alive** | **Boolean** |  | [optional] 
 **outputStream** | **Object** |  | [optional] 
+**inputStream** | **Object** |  | [optional] 
 
 

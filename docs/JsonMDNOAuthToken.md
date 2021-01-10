@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**verifier** | **String** |  | [optional] 
 **token** | **String** |  | [optional] 
+**verifier** | **String** |  | [optional] 
 
 

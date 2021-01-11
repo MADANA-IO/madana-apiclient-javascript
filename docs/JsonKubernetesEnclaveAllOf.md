@@ -4,14 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**remoteControlIP** | **String** |  | [optional] 
+**wireguardPort** | **Number** |  | [optional] 
 **debugInfo** | **String** |  | [optional] 
-**enclaveReplicaSetEvents** | [**JsonV1EventList**](JsonV1EventList.md) |  | [optional] 
 **isUsingInitContainer** | **Boolean** |  | [optional] 
-**podPhase** | **String** |  | [optional] 
 **enclavePodEvents** | [**JsonV1EventList**](JsonV1EventList.md) |  | [optional] 
+**podPhase** | **String** |  | [optional] 
+**remoteControlIP** | **String** |  | [optional] 
+**enclaveReplicaSetEvents** | [**JsonV1EventList**](JsonV1EventList.md) |  | [optional] 
 **attestationPort** | **Number** |  | [optional] 
 **enclaveDeploymentEvents** | [**JsonV1EventList**](JsonV1EventList.md) |  | [optional] 
-**wireguardPort** | **Number** |  | [optional] 
 
 

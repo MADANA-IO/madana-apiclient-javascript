@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**selfLink** | **String** |  | [optional] 
 **_continue** | **String** |  | [optional] 
 **resourceVersion** | **String** |  | [optional] 
-**selfLink** | **String** |  | [optional] 
 **remainingItemCount** | **Number** |  | [optional] 
 
 

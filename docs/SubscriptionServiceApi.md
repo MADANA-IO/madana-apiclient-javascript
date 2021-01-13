@@ -1,17 +1,17 @@
-# MadanaApiclient.SystemServiceApi
+# MadanaApiclient.SubscriptionServiceApi
 
 All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getAllObjects**](SystemServiceApi.md#getAllObjects) | **GET** /system/health | 
-[**getApplication2**](SystemServiceApi.md#getApplication2) | **GET** /system/usage | Return the current application usage.
+[**addFreeSubscription**](SubscriptionServiceApi.md#addFreeSubscription) | **POST** /subscriptions/free | 
+[**getApplication**](SubscriptionServiceApi.md#getApplication) | **GET** /subscriptions/active | 
 
 
 
-## getAllObjects
+## addFreeSubscription
 
-> File getAllObjects()
+> File addFreeSubscription()
 
 
 
@@ -20,8 +20,8 @@ Method | HTTP request | Description
 ```javascript
 import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaApiclient.SystemServiceApi();
-apiInstance.getAllObjects((error, data, response) => {
+let apiInstance = new MadanaApiclient.SubscriptionServiceApi();
+apiInstance.addFreeSubscription((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -48,21 +48,19 @@ No authorization required
 - **Accept**: application/json
 
 
-## getApplication2
+## getApplication
 
-> {String: Object} getApplication2()
+> File getApplication()
 
-Return the current application usage.
 
-Return the current application usage
 
 ### Example
 
 ```javascript
 import MadanaApiclient from 'madana-apiclient';
 
-let apiInstance = new MadanaApiclient.SystemServiceApi();
-apiInstance.getApplication2((error, data, response) => {
+let apiInstance = new MadanaApiclient.SubscriptionServiceApi();
+apiInstance.getApplication((error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -77,7 +75,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**{String: Object}**
+**File**
 
 ### Authorization
 

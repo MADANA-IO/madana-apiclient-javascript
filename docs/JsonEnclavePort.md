@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **port** | **String** |  | [optional] 
-**name** | **String** |  | [optional] 
 **protocol** | **String** |  | [optional] 
+**name** | **String** |  | [optional] 
 
 

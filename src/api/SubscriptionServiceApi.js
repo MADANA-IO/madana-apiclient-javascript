@@ -15,15 +15,15 @@
 import ApiClient from "../ApiClient";
 
 /**
-* DataCollectionService service.
-* @module api/DataCollectionServiceApi
+* SubscriptionService service.
+* @module api/SubscriptionServiceApi
 * @version 0.5.0-master.24
 */
-export default class DataCollectionServiceApi {
+export default class SubscriptionServiceApi {
 
     /**
-    * Constructs a new DataCollectionServiceApi. 
-    * @alias module:api/DataCollectionServiceApi
+    * Constructs a new SubscriptionServiceApi. 
+    * @alias module:api/SubscriptionServiceApi
     * @class
     * @param {module:ApiClient} [apiClient] Optional API client implementation to use,
     * default to {@link module:ApiClient#instance} if unspecified.
@@ -34,27 +34,21 @@ export default class DataCollectionServiceApi {
 
 
     /**
-     * Callback function to receive the result of the getMethodsForType operation.
-     * @callback module:api/DataCollectionServiceApi~getMethodsForTypeCallback
+     * Callback function to receive the result of the addFreeSubscription operation.
+     * @callback module:api/SubscriptionServiceApi~addFreeSubscriptionCallback
      * @param {String} error Error message, if any.
      * @param {File} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
-     * @param {String} name 
-     * @param {module:api/DataCollectionServiceApi~getMethodsForTypeCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SubscriptionServiceApi~addFreeSubscriptionCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link File}
      */
-    getMethodsForType(name, callback) {
+    addFreeSubscription(callback) {
       let postBody = null;
-      // verify the required parameter 'name' is set
-      if (name === undefined || name === null) {
-        throw new Error("Missing the required parameter 'name' when calling getMethodsForType");
-      }
 
       let pathParams = {
-        'name': name
       };
       let queryParams = {
       };
@@ -68,25 +62,25 @@ export default class DataCollectionServiceApi {
       let accepts = ['application/json'];
       let returnType = File;
       return this.apiClient.callApi(
-        '/datacollection/types/{name}/methods', 'GET',
+        '/subscriptions/free', 'POST',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
     }
 
     /**
-     * Callback function to receive the result of the getNodes operation.
-     * @callback module:api/DataCollectionServiceApi~getNodesCallback
+     * Callback function to receive the result of the getApplication operation.
+     * @callback module:api/SubscriptionServiceApi~getApplicationCallback
      * @param {String} error Error message, if any.
      * @param {File} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
-     * @param {module:api/DataCollectionServiceApi~getNodesCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {module:api/SubscriptionServiceApi~getApplicationCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link File}
      */
-    getNodes(callback) {
+    getApplication(callback) {
       let postBody = null;
 
       let pathParams = {
@@ -103,42 +97,7 @@ export default class DataCollectionServiceApi {
       let accepts = ['application/json'];
       let returnType = File;
       return this.apiClient.callApi(
-        '/datacollection/methods', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, null, callback
-      );
-    }
-
-    /**
-     * Callback function to receive the result of the getTypes operation.
-     * @callback module:api/DataCollectionServiceApi~getTypesCallback
-     * @param {String} error Error message, if any.
-     * @param {File} data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * @param {module:api/DataCollectionServiceApi~getTypesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link File}
-     */
-    getTypes(callback) {
-      let postBody = null;
-
-      let pathParams = {
-      };
-      let queryParams = {
-      };
-      let headerParams = {
-      };
-      let formParams = {
-      };
-
-      let authNames = [];
-      let contentTypes = [];
-      let accepts = ['application/json'];
-      let returnType = File;
-      return this.apiClient.callApi(
-        '/datacollection/types', 'GET',
+        '/subscriptions/active', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

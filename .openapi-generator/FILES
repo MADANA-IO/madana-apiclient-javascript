@@ -59,6 +59,7 @@ docs/OrganizationServiceApi.md
 docs/RequestServiceApi.md
 docs/SocialPlatformServiceApi.md
 docs/SocialServiceApi.md
+docs/SubscriptionServiceApi.md
 docs/SystemServiceApi.md
 docs/UserServiceApi.md
 docs/XmlNs0DiskConfig.md
@@ -112,6 +113,7 @@ src/api/OrganizationServiceApi.js
 src/api/RequestServiceApi.js
 src/api/SocialPlatformServiceApi.js
 src/api/SocialServiceApi.js
+src/api/SubscriptionServiceApi.js
 src/api/SystemServiceApi.js
 src/api/UserServiceApi.js
 src/index.js
@@ -207,6 +209,7 @@ test/api/OrganizationServiceApi.spec.js
 test/api/RequestServiceApi.spec.js
 test/api/SocialPlatformServiceApi.spec.js
 test/api/SocialServiceApi.spec.js
+test/api/SubscriptionServiceApi.spec.js
 test/api/SystemServiceApi.spec.js
 test/api/UserServiceApi.spec.js
 test/model/JsonDiskConfig.spec.js

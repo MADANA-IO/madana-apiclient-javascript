@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new MadanaApiclient.XmlNs0SignedDataAllOf();
+    instance = new MadanaApiclient.SubscriptionServiceApi();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,31 +47,27 @@
       object[property] = value;
   }
 
-  describe('XmlNs0SignedDataAllOf', function() {
-    it('should create an instance of XmlNs0SignedDataAllOf', function() {
-      // uncomment below and update the code to test XmlNs0SignedDataAllOf
-      //var instane = new MadanaApiclient.XmlNs0SignedDataAllOf();
-      //expect(instance).to.be.a(MadanaApiclient.XmlNs0SignedDataAllOf);
+  describe('SubscriptionServiceApi', function() {
+    describe('addFreeSubscription', function() {
+      it('should call addFreeSubscription successfully', function(done) {
+        //uncomment below and update the code to test addFreeSubscription
+        //instance.addFreeSubscription(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
     });
-
-    it('should have the property data (base name: "data")', function() {
-      // uncomment below and update the code to test the property data
-      //var instance = new MadanaApiclient.XmlNs0SignedDataAllOf();
-      //expect(instance).to.be();
+    describe('getApplication', function() {
+      it('should call getApplication successfully', function(done) {
+        //uncomment below and update the code to test getApplication
+        //instance.getApplication(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
     });
-
-    it('should have the property fingerpint (base name: "fingerpint")', function() {
-      // uncomment below and update the code to test the property fingerpint
-      //var instance = new MadanaApiclient.XmlNs0SignedDataAllOf();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property signature (base name: "signature")', function() {
-      // uncomment below and update the code to test the property signature
-      //var instance = new MadanaApiclient.XmlNs0SignedDataAllOf();
-      //expect(instance).to.be();
-    });
-
   });
 
 }));

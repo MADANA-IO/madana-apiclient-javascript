@@ -4,12 +4,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**lastName** | **String** |  | [optional] 
-**credentials** | [**JsonMDNUserCredentials**](JsonMDNUserCredentials.md) |  | [optional] 
 **socialAccounts** | [**[JsonMDNSocialUserObject]**](JsonMDNSocialUserObject.md) |  | [optional] 
-**firstName** | **String** |  | [optional] 
-**mail** | **String** |  | [optional] 
 **settings** | [**[JsonMDNUserSetting]**](JsonMDNUserSetting.md) |  | [optional] 
+**mail** | **String** |  | [optional] 
+**lastName** | **String** |  | [optional] 
 **guid** | **String** |  | [optional] 
+**firstName** | **String** |  | [optional] 
+**credentials** | [**JsonMDNUserCredentials**](JsonMDNUserCredentials.md) |  | [optional] 
 
 

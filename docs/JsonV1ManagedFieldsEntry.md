@@ -4,11 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**manager** | **String** |  | [optional] 
-**operation** | **String** |  | [optional] 
-**fieldsType** | **String** |  | [optional] 
-**apiVersion** | **String** |  | [optional] 
 **fieldsV1** | **Object** |  | [optional] 
+**operation** | **String** |  | [optional] 
+**apiVersion** | **String** |  | [optional] 
+**manager** | **String** |  | [optional] 
 **time** | **Number** |  | [optional] 
+**fieldsType** | **String** |  | [optional] 
 
 

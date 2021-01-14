@@ -9,6 +9,7 @@ docs/CertificateServiceApi.md
 docs/DataCollectionServiceApi.md
 docs/EnclaveServiceApi.md
 docs/EnvironmentServiceApi.md
+docs/InvoiceServiceApi.md
 docs/JsonDiskConfig.md
 docs/JsonEnclavePort.md
 docs/JsonEnclaveProcess.md
@@ -108,6 +109,7 @@ src/api/CertificateServiceApi.js
 src/api/DataCollectionServiceApi.js
 src/api/EnclaveServiceApi.js
 src/api/EnvironmentServiceApi.js
+src/api/InvoiceServiceApi.js
 src/api/NodeServiceApi.js
 src/api/OrganizationServiceApi.js
 src/api/RequestServiceApi.js
@@ -204,6 +206,7 @@ test/api/CertificateServiceApi.spec.js
 test/api/DataCollectionServiceApi.spec.js
 test/api/EnclaveServiceApi.spec.js
 test/api/EnvironmentServiceApi.spec.js
+test/api/InvoiceServiceApi.spec.js
 test/api/NodeServiceApi.spec.js
 test/api/OrganizationServiceApi.spec.js
 test/api/RequestServiceApi.spec.js

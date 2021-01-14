@@ -15,15 +15,15 @@
 import ApiClient from "../ApiClient";
 
 /**
-* OrganizationService service.
-* @module api/OrganizationServiceApi
+* InvoiceService service.
+* @module api/InvoiceServiceApi
 * @version 0.0.1-master.3
 */
-export default class OrganizationServiceApi {
+export default class InvoiceServiceApi {
 
     /**
-    * Constructs a new OrganizationServiceApi. 
-    * @alias module:api/OrganizationServiceApi
+    * Constructs a new InvoiceServiceApi. 
+    * @alias module:api/InvoiceServiceApi
     * @class
     * @param {module:ApiClient} [apiClient] Optional API client implementation to use,
     * default to {@link module:ApiClient#instance} if unspecified.
@@ -34,23 +34,27 @@ export default class OrganizationServiceApi {
 
 
     /**
-     * Callback function to receive the result of the getNodes3 operation.
-     * @callback module:api/OrganizationServiceApi~getNodes3Callback
+     * Callback function to receive the result of the getActiveSaaSSubscriptions operation.
+     * @callback module:api/InvoiceServiceApi~getActiveSaaSSubscriptionsCallback
      * @param {String} error Error message, if any.
      * @param {File} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
-     * @param {module:api/OrganizationServiceApi~getNodes3Callback} callback The callback function, accepting three arguments: error, data, response
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.dayssince  (default to '366')
+     * @param {module:api/InvoiceServiceApi~getActiveSaaSSubscriptionsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link File}
      */
-    getNodes3(callback) {
+    getActiveSaaSSubscriptions(opts, callback) {
+      opts = opts || {};
       let postBody = null;
 
       let pathParams = {
       };
       let queryParams = {
+        'dayssince': opts['dayssince']
       };
       let headerParams = {
       };
@@ -62,7 +66,7 @@ export default class OrganizationServiceApi {
       let accepts = ['application/json'];
       let returnType = File;
       return this.apiClient.callApi(
-        '/organizations', 'GET',
+        '/invoices', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

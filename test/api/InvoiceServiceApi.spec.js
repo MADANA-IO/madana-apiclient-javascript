@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new MadanaApiclient.XmlNs0SGXInfoAllOf();
+    instance = new MadanaApiclient.InvoiceServiceApi();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,25 +47,17 @@
       object[property] = value;
   }
 
-  describe('XmlNs0SGXInfoAllOf', function() {
-    it('should create an instance of XmlNs0SGXInfoAllOf', function() {
-      // uncomment below and update the code to test XmlNs0SGXInfoAllOf
-      //var instane = new MadanaApiclient.XmlNs0SGXInfoAllOf();
-      //expect(instance).to.be.a(MadanaApiclient.XmlNs0SGXInfoAllOf);
+  describe('InvoiceServiceApi', function() {
+    describe('getActiveSaaSSubscriptions', function() {
+      it('should call getActiveSaaSSubscriptions successfully', function(done) {
+        //uncomment below and update the code to test getActiveSaaSSubscriptions
+        //instance.getActiveSaaSSubscriptions(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
     });
-
-    it('should have the property status (base name: "status")', function() {
-      // uncomment below and update the code to test the property status
-      //var instance = new MadanaApiclient.XmlNs0SGXInfoAllOf();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property version (base name: "version")', function() {
-      // uncomment below and update the code to test the property version
-      //var instance = new MadanaApiclient.XmlNs0SGXInfoAllOf();
-      //expect(instance).to.be();
-    });
-
   });
 
 }));

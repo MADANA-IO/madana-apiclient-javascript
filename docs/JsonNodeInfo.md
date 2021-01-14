@@ -4,22 +4,22 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**hardwareFirmware** | **String** |  | [optional] 
+**cpuFrequency** | **String** |  | [optional] 
+**sgxInfo** | [**JsonSGXInfo**](JsonSGXInfo.md) |  | [optional] 
 **publicKey** | **String** |  | [optional] 
 **cpuLogicalCount** | **Number** |  | [optional] 
+**owner** | **String** |  | [optional] 
 **cpuPhysicalCores** | **Number** |  | [optional] 
 **memory** | **String** |  | [optional] 
-**hardwareBaseboard** | **String** |  | [optional] 
-**operatingSystemUptime** | **Number** |  | [optional] 
-**cpuFrequency** | **String** |  | [optional] 
-**connectionURL** | **String** |  | [optional] 
-**sgxInfo** | [**JsonSGXInfo**](JsonSGXInfo.md) |  | [optional] 
-**owner** | **String** |  | [optional] 
-**operatingSystem** | **String** |  | [optional] 
 **status** | **String** |  | [optional] 
-**cpuModel** | **String** |  | [optional] 
-**cpuFamily** | **String** |  | [optional] 
-**processors** | **[String]** |  | [optional] 
 **ipfsInfo** | [**JsonIPFSSystemInfo**](JsonIPFSSystemInfo.md) |  | [optional] 
+**hardwareFirmware** | **String** |  | [optional] 
+**cpuModel** | **String** |  | [optional] 
+**operatingSystem** | **String** |  | [optional] 
+**processors** | **[String]** |  | [optional] 
+**hardwareBaseboard** | **String** |  | [optional] 
+**connectionURL** | **String** |  | [optional] 
+**operatingSystemUptime** | **Number** |  | [optional] 
+**cpuFamily** | **String** |  | [optional] 
 
 

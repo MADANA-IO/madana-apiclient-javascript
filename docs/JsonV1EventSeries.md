@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**state** | **String** |  | [optional] 
 **lastObservedTime** | **Number** |  | [optional] 
+**state** | **String** |  | [optional] 
 **count** | **Number** |  | [optional] 
 
 

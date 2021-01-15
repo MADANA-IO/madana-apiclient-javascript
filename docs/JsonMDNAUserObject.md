@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**activated** | **String** |  | [optional] 
 **userName** | **String** |  | [optional] 
-**lastActive** | **String** |  | [optional] 
-**created** | **String** |  | [optional] 
 **image** | **String** |  | [optional] 
+**lastActive** | **String** |  | [optional] 
+**activated** | **String** |  | [optional] 
+**created** | **String** |  | [optional] 
 
 

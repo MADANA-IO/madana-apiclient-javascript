@@ -4,13 +4,53 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getActiveSaaSSubscriptions**](InvoiceServiceApi.md#getActiveSaaSSubscriptions) | **GET** /invoices | 
+[**getBillingPortalURL**](InvoiceServiceApi.md#getBillingPortalURL) | **GET** /invoices/portal | 
+[**getInvoices**](InvoiceServiceApi.md#getInvoices) | **GET** /invoices | 
 
 
 
-## getActiveSaaSSubscriptions
+## getBillingPortalURL
 
-> File getActiveSaaSSubscriptions(opts)
+> File getBillingPortalURL()
+
+
+
+### Example
+
+```javascript
+import MadanaApiclient from 'madana-apiclient';
+
+let apiInstance = new MadanaApiclient.InvoiceServiceApi();
+apiInstance.getBillingPortalURL((error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+**File**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getInvoices
+
+> File getInvoices(opts)
 
 
 
@@ -23,7 +63,7 @@ let apiInstance = new MadanaApiclient.InvoiceServiceApi();
 let opts = {
   'dayssince': "'366'" // String | 
 };
-apiInstance.getActiveSaaSSubscriptions(opts, (error, data, response) => {
+apiInstance.getInvoices(opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {

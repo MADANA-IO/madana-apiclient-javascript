@@ -4,16 +4,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
+**published** | **Boolean** |  | [optional] 
 **uuid** | **String** |  | [optional] 
 **defaultRunConfiguration** | [**JsonRunConfig**](JsonRunConfig.md) |  | [optional] 
-**roothash** | **String** |  | [optional] 
 **size** | **String** |  | [optional] 
-**rootHashOffset** | **String** |  | [optional] 
-**packages** | **[String]** |  | [optional] 
 **description** | **String** |  | [optional] 
+**packages** | **[String]** |  | [optional] 
 **content** | **[String]** |  | [optional] 
-**published** | **Boolean** |  | [optional] 
+**name** | **String** |  | [optional] 
+**roothash** | **String** |  | [optional] 
 **ipfsHash** | **String** |  | [optional] 
+**rootHashOffset** | **String** |  | [optional] 
 
 

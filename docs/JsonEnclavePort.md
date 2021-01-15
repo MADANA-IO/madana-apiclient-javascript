@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**protocol** | **String** |  | [optional] 
 **port** | **String** |  | [optional] 
 **name** | **String** |  | [optional] 
-**protocol** | **String** |  | [optional] 
 
 

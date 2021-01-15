@@ -4,22 +4,22 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**action** | **String** |  | [optional] 
-**type** | **String** |  | [optional] 
+**series** | [**JsonV1EventSeries**](JsonV1EventSeries.md) |  | [optional] 
+**reportingComponent** | **String** |  | [optional] 
+**source** | [**JsonV1EventSource**](JsonV1EventSource.md) |  | [optional] 
 **reportingInstance** | **String** |  | [optional] 
 **related** | [**JsonV1ObjectReference**](JsonV1ObjectReference.md) |  | [optional] 
-**reportingComponent** | **String** |  | [optional] 
+**kind** | **String** |  | [optional] 
 **message** | **String** |  | [optional] 
-**series** | [**JsonV1EventSeries**](JsonV1EventSeries.md) |  | [optional] 
-**involvedObject** | [**JsonV1ObjectReference**](JsonV1ObjectReference.md) |  | [optional] 
-**source** | [**JsonV1EventSource**](JsonV1EventSource.md) |  | [optional] 
-**metadata** | [**JsonV1ObjectMeta**](JsonV1ObjectMeta.md) |  | [optional] 
-**apiVersion** | **String** |  | [optional] 
+**reason** | **String** |  | [optional] 
+**firstTimestamp** | **Number** |  | [optional] 
 **lastTimestamp** | **Number** |  | [optional] 
 **eventTime** | **Number** |  | [optional] 
-**reason** | **String** |  | [optional] 
-**kind** | **String** |  | [optional] 
-**firstTimestamp** | **Number** |  | [optional] 
+**metadata** | [**JsonV1ObjectMeta**](JsonV1ObjectMeta.md) |  | [optional] 
 **count** | **Number** |  | [optional] 
+**type** | **String** |  | [optional] 
+**apiVersion** | **String** |  | [optional] 
+**involvedObject** | [**JsonV1ObjectReference**](JsonV1ObjectReference.md) |  | [optional] 
+**action** | **String** |  | [optional] 
 
 

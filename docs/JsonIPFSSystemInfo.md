@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**protocolVersion** | **String** |  | [optional] 
-**agentVersion** | **String** |  | [optional] 
-**swarmConnection** | **String** |  | [optional] 
 **publicKey** | **String** |  | [optional] 
+**swarmConnection** | **String** |  | [optional] 
+**agentVersion** | **String** |  | [optional] 
+**protocolVersion** | **String** |  | [optional] 
 **id** | **String** |  | [optional] 
 
 

@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**publicKey** | **String** |  | [optional] 
 **swarmConnection** | **String** |  | [optional] 
 **agentVersion** | **String** |  | [optional] 
+**publicKey** | **String** |  | [optional] 
 **protocolVersion** | **String** |  | [optional] 
 **id** | **String** |  | [optional] 
 

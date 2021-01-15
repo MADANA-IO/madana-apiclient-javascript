@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**remainingItemCount** | **Number** |  | [optional] 
 **resourceVersion** | **String** |  | [optional] 
+**remainingItemCount** | **Number** |  | [optional] 
 **selfLink** | **String** |  | [optional] 
 **_continue** | **String** |  | [optional] 
 

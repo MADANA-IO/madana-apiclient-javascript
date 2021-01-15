@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**nodeInfo** | [**JsonNodeInfo**](JsonNodeInfo.md) |  | [optional] 
 **enclaveProcess** | [**JsonEnclaveProcess**](JsonEnclaveProcess.md) |  | [optional] 
+**nodeInfo** | [**JsonNodeInfo**](JsonNodeInfo.md) |  | [optional] 
 **approved** | **String** |  | [optional] 
 
 

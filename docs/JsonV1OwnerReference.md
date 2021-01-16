@@ -4,11 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**controller** | **Boolean** |  | [optional] 
+**blockOwnerDeletion** | **Boolean** |  | [optional] 
+**apiVersion** | **String** |  | [optional] 
+**name** | **String** |  | [optional] 
 **kind** | **String** |  | [optional] 
 **uid** | **String** |  | [optional] 
-**name** | **String** |  | [optional] 
-**apiVersion** | **String** |  | [optional] 
-**blockOwnerDeletion** | **Boolean** |  | [optional] 
-**controller** | **Boolean** |  | [optional] 
 
 

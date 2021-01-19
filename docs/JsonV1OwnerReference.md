@@ -5,10 +5,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **uid** | **String** |  | [optional] 
-**name** | **String** |  | [optional] 
 **blockOwnerDeletion** | **Boolean** |  | [optional] 
+**name** | **String** |  | [optional] 
 **kind** | **String** |  | [optional] 
-**controller** | **Boolean** |  | [optional] 
 **apiVersion** | **String** |  | [optional] 
+**controller** | **Boolean** |  | [optional] 
 
 

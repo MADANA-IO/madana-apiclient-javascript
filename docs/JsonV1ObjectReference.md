@@ -5,11 +5,11 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **resourceVersion** | **String** |  | [optional] 
-**name** | **String** |  | [optional] 
+**kind** | **String** |  | [optional] 
 **uid** | **String** |  | [optional] 
 **namespace** | **String** |  | [optional] 
-**apiVersion** | **String** |  | [optional] 
-**kind** | **String** |  | [optional] 
 **fieldPath** | **String** |  | [optional] 
+**name** | **String** |  | [optional] 
+**apiVersion** | **String** |  | [optional] 
 
 

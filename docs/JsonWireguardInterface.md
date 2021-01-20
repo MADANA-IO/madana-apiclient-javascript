@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**address** | **String** |  | [optional] 
 **name** | **String** |  | [optional] 
+**address** | **String** |  | [optional] 
 **port** | **String** |  | [optional] 
 
 

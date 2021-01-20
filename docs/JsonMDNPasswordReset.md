@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**token** | **String** |  | [optional] 
-**mail** | **String** |  | [optional] 
 **password** | **String** |  | [optional] 
+**mail** | **String** |  | [optional] 
+**token** | **String** |  | [optional] 
 
 

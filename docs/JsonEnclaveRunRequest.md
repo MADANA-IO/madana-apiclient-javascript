@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ports** | [**[JsonEnclavePort]**](JsonEnclavePort.md) |  | [optional] 
-**wireguardPublicKey** | **String** |  | [optional] 
 **enclaveExecutionType** | **String** |  | [optional] 
+**wireguardPublicKey** | **String** |  | [optional] 
 **environmentUUID** | **String** |  | [optional] 
+**ports** | [**[JsonEnclavePort]**](JsonEnclavePort.md) |  | [optional] 
 **usingDefaultRunConfig** | **Boolean** |  | [optional] 
 
 

@@ -4,6 +4,7 @@ All URIs are relative to *http://api.madana.io/rest*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**cancelSubscription**](UserServiceApi.md#cancelSubscription) | **POST** /users/{username}/subscriptions/{planname}/cancel | 
 [**createObject**](UserServiceApi.md#createObject) | **POST** /users | Creates a new user object.
 [**deleteObject**](UserServiceApi.md#deleteObject) | **DELETE** /users/{username} | Deletes an User based on the provided id and securitycontext.
 [**deleteObject_0**](UserServiceApi.md#deleteObject_0) | **DELETE** /users/{username}/social/{platform}/{ident} | Deletes linked account from the user and securitycontext.
@@ -15,6 +16,51 @@ Method | HTTP request | Description
 [**setSettings**](UserServiceApi.md#setSettings) | **POST** /users/{username}/settings | 
 [**updateObject**](UserServiceApi.md#updateObject) | **PUT** /users/{username} | Updates Userproperties based on the provided user object.
 
+
+
+## cancelSubscription
+
+> File cancelSubscription(planname, username)
+
+
+
+### Example
+
+```javascript
+import MadanaApiclient from 'madana-apiclient';
+
+let apiInstance = new MadanaApiclient.UserServiceApi();
+let planname = "planname_example"; // String | 
+let username = "username_example"; // String | 
+apiInstance.cancelSubscription(planname, username, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **planname** | **String**|  | 
+ **username** | **String**|  | 
+
+### Return type
+
+**File**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
 
 
 ## createObject

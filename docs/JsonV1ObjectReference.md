@@ -4,12 +4,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**apiVersion** | **String** |  | [optional] 
-**name** | **String** |  | [optional] 
 **uid** | **String** |  | [optional] 
-**namespace** | **String** |  | [optional] 
+**resourceVersion** | **String** |  | [optional] 
 **kind** | **String** |  | [optional] 
 **fieldPath** | **String** |  | [optional] 
-**resourceVersion** | **String** |  | [optional] 
+**apiVersion** | **String** |  | [optional] 
+**name** | **String** |  | [optional] 
+**namespace** | **String** |  | [optional] 
 
 

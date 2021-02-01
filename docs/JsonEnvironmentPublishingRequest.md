@@ -5,13 +5,13 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **content** | **String** |  | [optional] 
-**name** | **String** |  | [optional] 
+**description** | **String** |  | [optional] 
+**size** | **String** |  | [optional] 
+**uuid** | **String** |  | [optional] 
 **ipfsHash** | **String** |  | [optional] 
 **isPublic** | **String** |  | [optional] 
-**description** | **String** |  | [optional] 
-**packages** | **String** |  | [optional] 
-**uuid** | **String** |  | [optional] 
 **ipfsPrimaryPeer** | **String** |  | [optional] 
-**size** | **String** |  | [optional] 
+**name** | **String** |  | [optional] 
+**packages** | **String** |  | [optional] 
 
 

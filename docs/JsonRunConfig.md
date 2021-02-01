@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**environment** | **{String: String}** |  | [optional] 
 **args** | **[String]** |  | [optional] 
 **run** | **String** |  | [optional] 
+**environment** | **{String: String}** |  | [optional] 
 **diskConfig** | [**[JsonDiskConfig]**](JsonDiskConfig.md) |  | [optional] 
 
 

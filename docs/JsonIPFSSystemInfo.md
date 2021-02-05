@@ -5,9 +5,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **swarmConnection** | **String** |  | [optional] 
+**id** | **String** |  | [optional] 
 **publicKey** | **String** |  | [optional] 
 **protocolVersion** | **String** |  | [optional] 
-**id** | **String** |  | [optional] 
 **agentVersion** | **String** |  | [optional] 
 
 

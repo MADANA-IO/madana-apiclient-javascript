@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **selfLink** | **String** |  | [optional] 
-**remainingItemCount** | **Number** |  | [optional] 
-**resourceVersion** | **String** |  | [optional] 
 **_continue** | **String** |  | [optional] 
+**resourceVersion** | **String** |  | [optional] 
+**remainingItemCount** | **Number** |  | [optional] 
 
 

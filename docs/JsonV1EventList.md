@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**kind** | **String** |  | [optional] 
 **items** | [**[JsonV1Event]**](JsonV1Event.md) |  | [optional] 
+**kind** | **String** |  | [optional] 
 **metadata** | [**JsonV1ListMeta**](JsonV1ListMeta.md) |  | [optional] 
 **apiVersion** | **String** |  | [optional] 
 

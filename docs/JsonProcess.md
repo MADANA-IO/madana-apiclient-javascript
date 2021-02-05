@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **errorStream** | **Object** |  | [optional] 
-**alive** | **Boolean** |  | [optional] 
 **outputStream** | **Object** |  | [optional] 
+**alive** | **Boolean** |  | [optional] 
 **inputStream** | **Object** |  | [optional] 
 
 

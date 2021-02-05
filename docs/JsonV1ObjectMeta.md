@@ -4,21 +4,21 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**generateName** | **String** |  | [optional] 
-**clusterName** | **String** |  | [optional] 
-**generation** | **Number** |  | [optional] 
-**namespace** | **String** |  | [optional] 
-**managedFields** | [**[JsonV1ManagedFieldsEntry]**](JsonV1ManagedFieldsEntry.md) |  | [optional] 
-**selfLink** | **String** |  | [optional] 
-**ownerReferences** | [**[JsonV1OwnerReference]**](JsonV1OwnerReference.md) |  | [optional] 
 **annotations** | **{String: String}** |  | [optional] 
-**creationTimestamp** | **Number** |  | [optional] 
+**managedFields** | [**[JsonV1ManagedFieldsEntry]**](JsonV1ManagedFieldsEntry.md) |  | [optional] 
+**generation** | **Number** |  | [optional] 
+**resourceVersion** | **String** |  | [optional] 
+**labels** | **{String: String}** |  | [optional] 
+**finalizers** | **[String]** |  | [optional] 
 **deletionGracePeriodSeconds** | **Number** |  | [optional] 
+**ownerReferences** | [**[JsonV1OwnerReference]**](JsonV1OwnerReference.md) |  | [optional] 
 **uid** | **String** |  | [optional] 
 **deletionTimestamp** | **Number** |  | [optional] 
-**resourceVersion** | **String** |  | [optional] 
-**finalizers** | **[String]** |  | [optional] 
+**namespace** | **String** |  | [optional] 
+**selfLink** | **String** |  | [optional] 
+**clusterName** | **String** |  | [optional] 
+**creationTimestamp** | **Number** |  | [optional] 
 **name** | **String** |  | [optional] 
-**labels** | **{String: String}** |  | [optional] 
+**generateName** | **String** |  | [optional] 
 
 

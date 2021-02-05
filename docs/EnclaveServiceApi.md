@@ -12,6 +12,7 @@ Method | HTTP request | Description
 [**getEnclave**](EnclaveServiceApi.md#getEnclave) | **GET** /enclaves/{uuid} | 
 [**getEnclaveTypes**](EnclaveServiceApi.md#getEnclaveTypes) | **GET** /enclaves/types | 
 [**getEnclaves**](EnclaveServiceApi.md#getEnclaves) | **GET** /enclaves | Returns UUIDs of existing analyses.
+[**getStats**](EnclaveServiceApi.md#getStats) | **GET** /enclaves/stats | 
 [**killEnclave**](EnclaveServiceApi.md#killEnclave) | **POST** /enclaves/{uuid}/kill | 
 
 
@@ -371,6 +372,51 @@ Name | Type | Description  | Notes
  **limit** | **String**| Used for offset pagination. Limit/Offset Paging would look like GET /request?limit&#x3D;20&amp;offset&#x3D;100. This query would return the 20 rows starting with the 100th row | [optional] [default to &#39;30&#39;]
  **offset** | **String**| Used for offset pagination. Limit/Offset Paging would look like GET /request?limit&#x3D;20&amp;offset&#x3D;100. This query would return the 20 rows starting with the 100th row | [optional] [default to &#39;0&#39;]
  **status** | **String**|  | [optional] 
+
+### Return type
+
+**File**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getStats
+
+> File getStats(opts)
+
+
+
+### Example
+
+```javascript
+import MadanaApiclient from 'madana-apiclient';
+
+let apiInstance = new MadanaApiclient.EnclaveServiceApi();
+let opts = {
+  'dayssince': "'30'" // String | 
+};
+apiInstance.getStats(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **dayssince** | **String**|  | [optional] [default to &#39;30&#39;]
 
 ### Return type
 

@@ -14,19 +14,19 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The JsonMDNCertificate model module.
- * @module model/JsonMDNCertificate
+ * The JsonNodeRunRequest model module.
+ * @module model/JsonNodeRunRequest
  * @version 0.5.0-master.51
  */
-class JsonMDNCertificate {
+class JsonNodeRunRequest {
     /**
-     * Constructs a new <code>JsonMDNCertificate</code>.
+     * Constructs a new <code>JsonNodeRunRequest</code>.
      * 
-     * @alias module:model/JsonMDNCertificate
+     * @alias module:model/JsonNodeRunRequest
      */
     constructor() { 
         
-        JsonMDNCertificate.initialize(this);
+        JsonNodeRunRequest.initialize(this);
     }
 
     /**
@@ -38,18 +38,21 @@ class JsonMDNCertificate {
     }
 
     /**
-     * Constructs a <code>JsonMDNCertificate</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>JsonNodeRunRequest</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/JsonMDNCertificate} obj Optional instance to populate.
-     * @return {module:model/JsonMDNCertificate} The populated <code>JsonMDNCertificate</code> instance.
+     * @param {module:model/JsonNodeRunRequest} obj Optional instance to populate.
+     * @return {module:model/JsonNodeRunRequest} The populated <code>JsonNodeRunRequest</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new JsonMDNCertificate();
+            obj = obj || new JsonNodeRunRequest();
 
-            if (data.hasOwnProperty('pem')) {
-                obj['pem'] = ApiClient.convertToType(data['pem'], 'String');
+            if (data.hasOwnProperty('cpuCount')) {
+                obj['cpuCount'] = ApiClient.convertToType(data['cpuCount'], 'String');
+            }
+            if (data.hasOwnProperty('subdomain')) {
+                obj['subdomain'] = ApiClient.convertToType(data['subdomain'], 'String');
             }
         }
         return obj;
@@ -60,14 +63,20 @@ class JsonMDNCertificate {
 
 /**
  * 
- * @member {String} pem
+ * @member {String} cpuCount
  */
-JsonMDNCertificate.prototype['pem'] = undefined;
+JsonNodeRunRequest.prototype['cpuCount'] = undefined;
+
+/**
+ * 
+ * @member {String} subdomain
+ */
+JsonNodeRunRequest.prototype['subdomain'] = undefined;
 
 
 
 
 
 
-export default JsonMDNCertificate;
+export default JsonNodeRunRequest;
 

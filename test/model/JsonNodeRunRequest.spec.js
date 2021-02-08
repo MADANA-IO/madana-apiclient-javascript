@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new MadanaApiclient.XmlNs0WireguardInterface();
+    instance = new MadanaApiclient.JsonNodeRunRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,28 +47,22 @@
       object[property] = value;
   }
 
-  describe('XmlNs0WireguardInterface', function() {
-    it('should create an instance of XmlNs0WireguardInterface', function() {
-      // uncomment below and update the code to test XmlNs0WireguardInterface
-      //var instane = new MadanaApiclient.XmlNs0WireguardInterface();
-      //expect(instance).to.be.a(MadanaApiclient.XmlNs0WireguardInterface);
+  describe('JsonNodeRunRequest', function() {
+    it('should create an instance of JsonNodeRunRequest', function() {
+      // uncomment below and update the code to test JsonNodeRunRequest
+      //var instane = new MadanaApiclient.JsonNodeRunRequest();
+      //expect(instance).to.be.a(MadanaApiclient.JsonNodeRunRequest);
     });
 
-    it('should have the property address (base name: "address")', function() {
-      // uncomment below and update the code to test the property address
-      //var instance = new MadanaApiclient.XmlNs0WireguardInterface();
+    it('should have the property cpuCount (base name: "cpuCount")', function() {
+      // uncomment below and update the code to test the property cpuCount
+      //var instance = new MadanaApiclient.JsonNodeRunRequest();
       //expect(instance).to.be();
     });
 
-    it('should have the property name (base name: "name")', function() {
-      // uncomment below and update the code to test the property name
-      //var instance = new MadanaApiclient.XmlNs0WireguardInterface();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property port (base name: "port")', function() {
-      // uncomment below and update the code to test the property port
-      //var instance = new MadanaApiclient.XmlNs0WireguardInterface();
+    it('should have the property subdomain (base name: "subdomain")', function() {
+      // uncomment below and update the code to test the property subdomain
+      //var instance = new MadanaApiclient.JsonNodeRunRequest();
       //expect(instance).to.be();
     });
 

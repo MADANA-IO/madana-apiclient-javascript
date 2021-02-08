@@ -39,6 +39,7 @@ docs/JsonMDNUserSetting.md
 docs/JsonMDNUserSettingAllOf.md
 docs/JsonNetworkInterface.md
 docs/JsonNodeInfo.md
+docs/JsonNodeRunRequest.md
 docs/JsonProcess.md
 docs/JsonRunConfig.md
 docs/JsonSGXInfo.md
@@ -148,6 +149,7 @@ src/model/JsonMDNUserSetting.js
 src/model/JsonMDNUserSettingAllOf.js
 src/model/JsonNetworkInterface.js
 src/model/JsonNodeInfo.js
+src/model/JsonNodeRunRequest.js
 src/model/JsonProcess.js
 src/model/JsonRunConfig.js
 src/model/JsonSGXInfo.js
@@ -244,6 +246,7 @@ test/model/JsonMDNUserSetting.spec.js
 test/model/JsonMDNUserSettingAllOf.spec.js
 test/model/JsonNetworkInterface.spec.js
 test/model/JsonNodeInfo.spec.js
+test/model/JsonNodeRunRequest.spec.js
 test/model/JsonProcess.spec.js
 test/model/JsonRunConfig.spec.js
 test/model/JsonSGXInfo.spec.js

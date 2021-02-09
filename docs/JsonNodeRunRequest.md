@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**cpuCount** | **String** |  | [optional] 
 **subdomain** | **String** |  | [optional] 
+**cpuCount** | **String** |  | [optional] 
 
 

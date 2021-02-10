@@ -44,7 +44,6 @@ docs/JsonProcess.md
 docs/JsonRunConfig.md
 docs/JsonSGXInfo.md
 docs/JsonSignedData.md
-docs/JsonSignedDataUtils.md
 docs/JsonV1Event.md
 docs/JsonV1EventList.md
 docs/JsonV1EventSeries.md
@@ -154,7 +153,6 @@ src/model/JsonProcess.js
 src/model/JsonRunConfig.js
 src/model/JsonSGXInfo.js
 src/model/JsonSignedData.js
-src/model/JsonSignedDataUtils.js
 src/model/JsonV1Event.js
 src/model/JsonV1EventList.js
 src/model/JsonV1EventSeries.js
@@ -251,7 +249,6 @@ test/model/JsonProcess.spec.js
 test/model/JsonRunConfig.spec.js
 test/model/JsonSGXInfo.spec.js
 test/model/JsonSignedData.spec.js
-test/model/JsonSignedDataUtils.spec.js
 test/model/JsonV1Event.spec.js
 test/model/JsonV1EventList.spec.js
 test/model/JsonV1EventSeries.spec.js

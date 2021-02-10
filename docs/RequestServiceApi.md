@@ -38,7 +38,7 @@ let apiInstance = new MadanaApiclient.RequestServiceApi();
 let uuid = "uuid_example"; // String | 
 let opts = {
   'authorization': "authorization_example", // String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
-  'body': new MadanaApiclient.JsonSignedDataUtils() // JsonSignedDataUtils | 
+  'body': new MadanaApiclient.JsonSignedData() // JsonSignedData | 
 };
 apiInstance.addData(uuid, opts, (error, data, response) => {
   if (error) {
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **uuid** | **String**|  | 
  **authorization** | **String**| Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c | [optional] 
- **body** | [**JsonSignedDataUtils**](JsonSignedDataUtils.md)|  | [optional] 
+ **body** | [**JsonSignedData**](JsonSignedData.md)|  | [optional] 
 
 ### Return type
 
@@ -89,7 +89,7 @@ let apiInstance = new MadanaApiclient.RequestServiceApi();
 let uuid = "uuid_example"; // String | 
 let opts = {
   'authorization': "authorization_example", // String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
-  'body': new MadanaApiclient.JsonSignedDataUtils() // JsonSignedDataUtils | 
+  'body': new MadanaApiclient.JsonSignedData() // JsonSignedData | 
 };
 apiInstance.cancelProcessing(uuid, opts, (error, data, response) => {
   if (error) {
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **uuid** | **String**|  | 
  **authorization** | **String**| Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c | [optional] 
- **body** | [**JsonSignedDataUtils**](JsonSignedDataUtils.md)|  | [optional] 
+ **body** | [**JsonSignedData**](JsonSignedData.md)|  | [optional] 
 
 ### Return type
 
@@ -139,7 +139,7 @@ import MadanaApiclient from 'madana-apiclient';
 let apiInstance = new MadanaApiclient.RequestServiceApi();
 let opts = {
   'authorization': "authorization_example", // String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
-  'body': new MadanaApiclient.JsonSignedDataUtils() // JsonSignedDataUtils | 
+  'body': new MadanaApiclient.JsonSignedData() // JsonSignedData | 
 };
 apiInstance.createNewRequest(opts, (error, data, response) => {
   if (error) {
@@ -156,7 +156,7 @@ apiInstance.createNewRequest(opts, (error, data, response) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **authorization** | **String**| Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c | [optional] 
- **body** | [**JsonSignedDataUtils**](JsonSignedDataUtils.md)|  | [optional] 
+ **body** | [**JsonSignedData**](JsonSignedData.md)|  | [optional] 
 
 ### Return type
 
@@ -331,7 +331,7 @@ No authorization required
 
 ## getData
 
-> JsonSignedDataUtils getData(uuid, opts)
+> JsonSignedData getData(uuid, opts)
 
 Is called from the APE to request all parked datasets.
 
@@ -366,7 +366,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**JsonSignedDataUtils**](JsonSignedDataUtils.md)
+[**JsonSignedData**](JsonSignedData.md)
 
 ### Authorization
 
@@ -681,7 +681,7 @@ let apiInstance = new MadanaApiclient.RequestServiceApi();
 let uuid = "uuid_example"; // String | 
 let opts = {
   'authorization': "authorization_example", // String | Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
-  'body': new MadanaApiclient.JsonSignedDataUtils() // JsonSignedDataUtils | 
+  'body': new MadanaApiclient.JsonSignedData() // JsonSignedData | 
 };
 apiInstance.setResult(uuid, opts, (error, data, response) => {
   if (error) {
@@ -699,7 +699,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **uuid** | **String**|  | 
  **authorization** | **String**| Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c | [optional] 
- **body** | [**JsonSignedDataUtils**](JsonSignedDataUtils.md)|  | [optional] 
+ **body** | [**JsonSignedData**](JsonSignedData.md)|  | [optional] 
 
 ### Return type
 

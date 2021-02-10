@@ -6,6 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**createNode**](NodeServiceApi.md#createNode) | **POST** /nodes/v2 | 
 [**getBootstrap**](NodeServiceApi.md#getBootstrap) | **GET** /nodes/bootstrap | 
+[**getNodeLicenses**](NodeServiceApi.md#getNodeLicenses) | **GET** /nodes/licenses | 
 [**getNodeV2**](NodeServiceApi.md#getNodeV2) | **GET** /nodes/v2/{ident} | 
 [**getNodes2**](NodeServiceApi.md#getNodes2) | **GET** /nodes | 
 [**getNodesV2**](NodeServiceApi.md#getNodesV2) | **GET** /nodes/v2 | Returns UUIDs of existing analyses.
@@ -84,6 +85,51 @@ apiInstance.getBootstrap((error, data, response) => {
 ### Parameters
 
 This endpoint does not need any parameter.
+
+### Return type
+
+**File**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## getNodeLicenses
+
+> File getNodeLicenses(opts)
+
+
+
+### Example
+
+```javascript
+import MadanaApiclient from 'madana-apiclient';
+
+let apiInstance = new MadanaApiclient.NodeServiceApi();
+let opts = {
+  'active': "'true'" // String | 
+};
+apiInstance.getNodeLicenses(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **active** | **String**|  | [optional] [default to &#39;true&#39;]
 
 ### Return type
 

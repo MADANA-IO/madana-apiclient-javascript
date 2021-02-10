@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**signature** | **String** |  | [optional] 
 **fingerpint** | **String** |  | [optional] 
 **data** | **String** |  | [optional] 
+**signature** | **String** |  | [optional] 
 
 
